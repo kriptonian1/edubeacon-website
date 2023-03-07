@@ -31,7 +31,10 @@ const Hero = () => {
     return (
         <div className={'pt-[300px]  h-[75vh] z-10 relative flex gap-x-10 justify-center items-start'}>
             <Image
-                className={`transition-all ease-in-out duration-[2000ms] translate-y-[${yIndexLeft}px] relative`}
+                style={{
+                    transform: `translateY(${yIndexLeft}px)`,
+                }}
+                className={`transition-all ease-in-out duration-[2000ms] relative`}
                 src={leftAsset}
                 alt={''}
             />
@@ -52,7 +55,10 @@ const Hero = () => {
                 </div>
             </div>
             <Image
-                className={`transition-all ease-in-out duration-[4000ms] translate-y-[${yIndexRight}px] relative`}
+                style={{
+                    transform: `translateY(${yIndexRight}px)`,
+                }}
+                className={`transition-all ease-in-out duration-[4000ms] relative`}
                 src={rightAsset}
                 alt={''}
             />

@@ -83,7 +83,7 @@ const policyLinks = [
 
 const Footer = () => {
     return (
-        <div className={'bg-[#252525] p-20 flex items-center justify-between'}>
+        <div className={'bg-[#252525] p-20 flex items-center justify-between z-10'}>
             <div className={'flex flex-col gap-y-8 justify-between'}>
                 <Image src={logoColored} alt={''} />
                 <div className={'flex gap-x-3'}>

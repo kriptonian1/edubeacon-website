@@ -1,12 +1,10 @@
-import Hero from '@/components/landing/Hero';
-import Skills from '@/components/landing/Skills';
-import WhyChoose from '@/components/landing/WhyChoose';
-import Upskill from '@/components/landing/Upskill';
-import FAQ from '@/components/landing/FAQ';
-import Testimonials from '@/components/landing/Testimonials';
+import React from 'react';
 import Page from '@/components/common/Page';
+import Hero from '@/components/why-edubeacon/Hero';
+import SkillDevelopment from '@/components/why-edubeacon/SkillDevelopment';
+import Perks from '@/components/why-edubeacon/Perks';
 
-export default function Home() {
+const WhyEdubeacon = () => {
     return (
         <Page includeNavbar includeFooter>
             <div className={'w-[100vw] absolute'}>
@@ -17,11 +15,10 @@ export default function Home() {
                 />
             </div>
             <Hero />
-            <Skills />
-            <WhyChoose />
-            <Upskill />
-            <FAQ />
-            <Testimonials />
+            <SkillDevelopment />
+            <Perks />
         </Page>
     );
-}
+};
+
+export default WhyEdubeacon;
