@@ -4,6 +4,7 @@ import BlueButton from '@/components/common/BlueButton';
 import React from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { EdubeaconLogo } from './assets';
 
 const links = [
     {
@@ -46,14 +47,17 @@ const Navbar = () => {
     }, [router]);
 
     return (
-        <div
+        <nav
             className={`${
-                hasScrolled ? 'bg-[#565656]/[90%] rounded-b-xl sticky' : 'bg-transparent'
+                hasScrolled ? 'bg-black/50 rounded-b-xl sticky backdrop-blur-sm' : 'bg-transparent'
             } absolute z-20 w-screen flex justify-between top-0 px-10 items-center text-white transition-all ease-out duration-300`}
         >
-            <a href={'#'}>
-                <Image src={logoWhite} height={80} alt={'logo'} />
-            </a>
+            <Link href={'/'}>
+                <Image src={EdubeaconLogo} height={80} alt={'logo'} />
+            </Link>
+
+            {/* <Image src={logoWhite} height={80} alt={'logo'} /> */}
+
             <div className={'flex gap-x-5 items-center text-lg'}>
                 {links.map((link, i) => (
                     <Link
@@ -72,7 +76,7 @@ const Navbar = () => {
                 ))}
             </div>
             <BlueButton>Browse Courses</BlueButton>
-        </div>
+        </nav>
     );
 };
 

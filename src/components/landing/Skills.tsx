@@ -27,17 +27,17 @@ const Skills = () => {
             </h3>
             <div
                 className={
-                    'flex flex-row gap-x-10 w-[80vw] p-10 border-[2px] border-lightBlue rounded-lg bg-[#DBE5FF]/[15%] justify-center items-center relative z-10'
+                    'flex flex-col md:flex-row gap-x-10 w-[80vw] p-10 border-[2px] border-lightBlue rounded-lg bg-[#DBE5FF]/[15%] justify-center items-center relative z-10'
                 }
             >
                 {details.map((detail, index) => (
-                    <>
-                        <div key={index} className={'flex flex-col gap-y-6'}>
+                    <div key={index} className={"flex"}>
+                        <div  className={'flex flex-col gap-x-10 gap-y-6 mx-10'}>
                             <div className={'font-bold text-3xl'}>{detail.header}</div>
                             <div className={'text-xl font-medium'}>{detail.body}</div>
                         </div>
-                        {index !== details.length - 1 && <div className={'h-[100px] w-[2px] bg-white'}></div>}
-                    </>
+                        {index !== details.length - 1 && <div className={'w-[100px] h-[2px] md:h-[100px] md:w-[2px] bg-white'}></div>}
+                    </div>
                 ))}
             </div>
             <div

@@ -1,10 +1,9 @@
 import BlueButton from '@/components/common/BlueButton';
 import WhiteButton from '@/components/common/WhiteButton';
-import line from './assets/Hero/line.svg';
-import leftAsset from './assets/Hero/left-asset.svg';
 import rightAsset from './assets/Hero/right-asset.svg';
 import Image from 'next/image';
 import React from 'react';
+import { LeftAsset, Line, RightAsset } from './assets/Hero';
 
 const Hero = () => {
     const [yIndexLeft, setYIndexLeft] = React.useState(0);
@@ -29,15 +28,17 @@ const Hero = () => {
     }, []);
 
     return (
-        <div className={'pt-[300px]  h-[75vh] z-10 relative flex gap-x-10 justify-center items-start'}>
-            <Image
+        <div className={'pt-[25vh]  z-10 relative flex gap-x-10 justify-center items-start'}>
+            {/* Left books animation */}
+            <div
                 style={{
                     transform: `translateY(${yIndexLeft}px)`,
                 }}
-                className={`transition-all ease-in-out duration-[2000ms] relative`}
-                src={leftAsset}
-                alt={''}
-            />
+                className={`transition-all hidden md:block ease-in-out duration-[2000ms] relative`}
+            >
+                <LeftAsset />
+            </div>
+
             <div className="text-white text-center items-center flex flex-col gap-y-5">
                 <div className={'font-bold text-7xl'}>
                     Unlock your <span className={'text-navyBlue'}>Potential</span>
@@ -50,18 +51,29 @@ const Hero = () => {
                 </div>
                 <div className={'flex gap-x-5 mt-5'}>
                     <BlueButton className={'w-[180px]'}>Live Courses</BlueButton>
-                    <Image className={'mt-[60px]'} src={line} alt={''} />
+                    <div className="mt-[60px]">
+                        <Line />
+                    </div>
                     <WhiteButton className={'w-[180px]'}>Recorded Courses</WhiteButton>
                 </div>
             </div>
-            <Image
+            {/* <Image
                 style={{
                     transform: `translateY(${yIndexRight}px)`,
                 }}
                 className={`transition-all ease-in-out duration-[4000ms] relative`}
                 src={rightAsset}
                 alt={''}
-            />
+                draggable={false}
+            /> */}
+            <div
+                style={{
+                    transform: `translateY(${yIndexRight}px)`,
+                }}
+                className={`transition-all ease-in-out duration-[4000ms] relative hidden md:block`}
+            >
+                <RightAsset />
+            </div>
         </div>
     );
 };

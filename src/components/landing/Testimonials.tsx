@@ -4,6 +4,9 @@ import lady2 from './assets/Testimonials/lady2.png';
 import man from './assets/Testimonials/man.png';
 import Image from 'next/image';
 import { Star } from '@mui/icons-material';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { Autoplay } from 'swiper';
 
 const data = [
     {
@@ -50,30 +53,43 @@ const Testimonials = () => {
                 <div className={'text-4xl font-medium'}>Graduate&apos;s Testimonials</div>
                 <div className={'text-lg text-[#B4B4B4]'}>Let’s see what our happy graduates say</div>
             </div>
-            <div className={'flex gap-5 flex-wrap items-center justify-center w-[70vw]'}>
-                {data.map((item, index) => (
-                    <div key={index} className={'flex gap-x-4 rounded-lg bg-white/[15%] text-left p-5 w-[35%]'}>
-                        <div className={'flex w-[100px]'}>
-                            <div className={'min-w-[80px] h-[80px] bg-lightBlue rounded-full z-0 relative'} />
-                            <Image
-                                src={item.image}
-                                alt={''}
-                                className={'relative right-[70px] z-10 min-w-[80px] h-[80px]'}
-                            />
-                        </div>
-                        <div className={'flex flex-col gap-y-3 flex-grow'}>
-                            <div className={'text-xl font-medium'}>{item.name}</div>
-                            <div className={'text-sm text-[#B4B4B4]'}>{item.position}</div>
-                            <div className={' flex gap-x-1'}>
-                                {Array.from(Array(5).keys()).map((item, index) => (
-                                    <Star key={index} width="16" height="16" className={'text-[#F9A826]'} />
-                                ))}
-                            </div>
+            <div className={'flex gap-12  flex-row items-center justify-center'}>
+                <Swiper
+                    className="mySwiper flex gap-12  flex-row items-center justify-center"
+                    spaceBetween={1}
+                    slidesPerView={5}
+                    autoplay={{
+                        delay: 1000,
+                        disableOnInteraction: false,
+                    }}
+                    modules={[Autoplay]}
+                >
+                    {data.map((item, index) => (
+                        <SwiperSlide key={index}>
+                            <div className={'flex gap-x-4 rounded-lg bg-white/[15%] text-left p-5  w-[30rem]'}>
+                                <div className={'flex'}>
+                                    <div className={'min-w-[80px] h-[80px] bg-lightBlue rounded-full z-0 relative'} />
+                                    <Image
+                                        src={item.image}
+                                        alt={''}
+                                        className={'relative right-[70px] z-10 min-w-[80px] h-[80px]'}
+                                    />
+                                </div>
+                                <div className={'flex flex-col gap-y-3 flex-grow'}>
+                                    <div className={'text-xl font-medium'}>{item.name}</div>
+                                    <div className={'text-sm text-[#B4B4B4]'}>{item.position}</div>
+                                    <div className={' flex gap-x-1'}>
+                                        {Array.from(Array(5).keys()).map((item, index) => (
+                                            <Star key={index} width="16" height="16" className={'text-[#51A9FF]'} />
+                                        ))}
+                                    </div>
 
-                            <div>{item.comments}</div>
-                        </div>
-                    </div>
-                ))}
+                                    <div>{item.comments}</div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
             </div>
         </div>
     );

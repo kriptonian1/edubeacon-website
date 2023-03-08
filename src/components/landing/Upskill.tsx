@@ -1,8 +1,6 @@
 import React from 'react';
-import asset1 from './assets/Upskill/asset1.svg';
-import asset2 from './assets/Upskill/asset2.svg';
-import asset3 from './assets/Upskill/asset3.svg';
 import Image from 'next/image';
+import { asset1, asset2, asset3 } from './assets/Upskill';
 
 const data = [
     {
@@ -23,36 +21,40 @@ const data = [
         id: 3,
         title: "Get the skills you need to thrive in today's fast-paced world.",
         body: "We believe that everyone has the potential to succeed. That's why we offer a range of courses, designed to help you stay relevant and competitive in your field.",
-        buttonText: 'Take charge of your career, Sign Up',
+        buttonText: 'Own your career',
         image: asset3,
     },
 ];
 
 const Upskill = () => {
     return (
-        <div className={'flex flex-col gap-y-10'}>
-            <div className={'text-2xl text-center text-white'}>
+        <div className={'flex flex-col gap-y-10 text-white'}>
+            <div className={'text-2xl text-center'}>
                 Upskill Yourself And <span className={'font-bold'}>Get Placed</span>
             </div>
-            <div className={'flex gap-x-10 items-center justify-center'}>
+            <div className={'flex flex-col md:flex-row gap-y-10  md:gap-x-10 items-center justify-center'}>
                 {data.map(item => (
                     <div
                         key={item.id}
                         className={
-                            'flex flex-col justify-between gap-y-8 w-[20vw] bg-[#2693FF]/[60%] rounded-2xl h-[450px] hover:shadow-2xl hover:shadow-sky-700/40 transition-all ease-out duration-300'
+                            'flex flex-col relative justify-between gap-y-8 aspect-square lg:w-[23vw] bg-[#2693FF]/[60%] rounded-2xl h-[450px] hover:shadow-2xl hover:shadow-sky-700/40 transition-all ease-out duration-300'
                         }
                     >
-                        <div className={'flex gap-x-5 text-white px-8 pt-8'}>
-                            <div className={'bg-white/[40%] rounded-lg p-4 h-fit'}>{item.id}</div>
+                        <div className={'flex gap-x-5  px-8 pt-8 items-start'}>
+                            {/* <div className={'bg-white/[40%] aspect-square rounded-lg p-4 w-7'}>{item.id}</div> */}
+                            <div className='aspect-square bg-white/[40%] w-10 h-10 items-center justify-center flex p-4 rounded-md text-xl'>
+                                {item.id}
+                            </div>
                             <div className={'text-lg'}>{item.title}</div>
                         </div>
-                        <div className={'text-white px-8'}>{item.body}</div>
-                        <div className={'flex justify-between items-start'}>
-                            <button className={'bg-white text-blue-500 rounded-xl ml-8 py-2 px-4'}>
+                        <div className={' px-8'}>{item.body}</div>
+                        <div className={'flex justify-between mb-14 items-start'}>
+                            <button className={'bg-white text-blue-500 rounded-full ml-8 py-2 px-4'}>
                                 {item.buttonText}
                             </button>
-                            <Image src={item.image} alt={''} />
+                            
                         </div>
+                        <Image className='absolute right-0 bottom-0 ' draggable={false} src={item.image} width={'111'} alt={''} />
                     </div>
                 ))}
             </div>

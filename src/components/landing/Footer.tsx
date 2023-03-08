@@ -1,33 +1,29 @@
 import React from 'react';
-import facebook from './assets/Footer/facebook.svg';
-import instagram from './assets/Footer/instagram.svg';
-import twitter from './assets/Footer/twitter.svg';
-import youtube from './assets/Footer/youtube.svg';
-import linkedin from './assets/Footer/linkedin.svg';
 import logoColored from './assets/Footer/logo-colored.svg';
 import Image from 'next/image';
 import BlueButton from '@/components/common/BlueButton';
 import WhiteButton from '@/components/common/WhiteButton';
+import { FacebookIcon, InstagramIcon, LinkedinLogo, LogoColored, TwitterIcon, YoutubeLogo } from './assets/Footer';
 
 const socials = [
     {
-        icon: facebook,
+        icon: <FacebookIcon />,
         link: '#',
     },
     {
-        icon: instagram,
+        icon: <InstagramIcon />,
         link: '#',
     },
     {
-        icon: twitter,
+        icon: <TwitterIcon/>,
         link: '#',
     },
     {
-        icon: youtube,
+        icon: <YoutubeLogo/>,
         link: '#',
     },
     {
-        icon: linkedin,
+        icon: <LinkedinLogo/>,
         link: '#',
     },
 ];
@@ -85,11 +81,12 @@ const Footer = () => {
     return (
         <div className={'bg-[#252525] p-20 flex items-center justify-between z-10'}>
             <div className={'flex flex-col gap-y-8 justify-between'}>
-                <Image src={logoColored} alt={''} />
+                {/* <Image src={logoColored} alt={''} /> */}
+                <LogoColored />
                 <div className={'flex gap-x-3'}>
                     {socials.map((s, index) => (
                         <a key={index} href={s.link}>
-                            <Image src={s.icon} alt={''} />
+                            {s.icon}
                         </a>
                     ))}
                 </div>
