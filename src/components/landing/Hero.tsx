@@ -1,7 +1,5 @@
 import BlueButton from '@/components/common/BlueButton';
 import WhiteButton from '@/components/common/WhiteButton';
-import rightAsset from './assets/Hero/right-asset.svg';
-import Image from 'next/image';
 import React from 'react';
 import { LeftAsset, Line, RightAsset } from './assets/Hero';
 
@@ -28,7 +26,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <div className={'pt-[25vh]  z-10 relative flex gap-x-10 justify-center items-start'}>
+        <div className={'pt-[25vh] z-10 relative flex gap-x-10 justify-center items-start px-5'}>
             {/* Left books animation */}
             <div
                 style={{
@@ -40,32 +38,23 @@ const Hero = () => {
             </div>
 
             <div className="text-white text-center items-center flex flex-col gap-y-5">
-                <div className={'font-bold text-7xl'}>
+                <div className={'font-bold text-3xl md:text-5xl lg:text-7xl'}>
                     Unlock your <span className={'text-navyBlue'}>Potential</span>
                 </div>
-                <span className={'text-3xl'}>
+                <span className={'text-xl md:text-2xl lg:text-3xl'}>
                     with <span className={'text-lightBlue'}>Edubeacon</span>
                 </span>
                 <div className={'font-medium text-lg'}>
                     Learn practical skills to transform your career, anytime and anywhere with Edubeacon.
                 </div>
-                <div className={'flex gap-x-5 mt-5'}>
-                    <BlueButton className={'w-[180px]'}>Live Courses</BlueButton>
-                    <div className="mt-[60px]">
+                <div className={'flex md:flex-row flex-col gap-5 mt-5 items-center'}>
+                    <BlueButton className={'w-[180px] order-1'}>Live Courses</BlueButton>
+                    <div className="order-3 md:order-2 md:mt-[60px]">
                         <Line />
                     </div>
-                    <WhiteButton className={'w-[180px]'}>Recorded Courses</WhiteButton>
+                    <WhiteButton className={'w-[180px] md:order-3 order-2'}>Recorded Courses</WhiteButton>
                 </div>
             </div>
-            {/* <Image
-                style={{
-                    transform: `translateY(${yIndexRight}px)`,
-                }}
-                className={`transition-all ease-in-out duration-[4000ms] relative`}
-                src={rightAsset}
-                alt={''}
-                draggable={false}
-            /> */}
             <div
                 style={{
                     transform: `translateY(${yIndexRight}px)`,

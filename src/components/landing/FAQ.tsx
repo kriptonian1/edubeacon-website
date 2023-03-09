@@ -39,7 +39,7 @@ const FAQ = () => {
     return (
         <div className={'text-white flex flex-col gap-y-10 items-center justify-center'}>
             <div className={'font-bold text-3xl text-center'}>FAQs</div>
-            <div className={'flex flex-col w-[60vw] z-10 relative'}>
+            <div className={'flex flex-col w-[85vw] md:w-[75vw] lg:w-[60vw] z-10 relative'}>
                 {data.map(item => (
                     <button
                         onClick={handleSelected.bind(null, item.id)}
@@ -48,9 +48,9 @@ const FAQ = () => {
                             selected === item.id ? 'bg-[#057CF2]/[20%]' : 'bg-[#16171F]'
                         } border-b-[2px] border-b-gray-600 p-10 text-left items-start`}
                     >
-                        <div className={'text-[#3F8DC6]/[83%] font-bold text-3xl'}>{item.id}</div>
+                        <div className={'text-[#3F8DC6]/[83%] font-bold text-2xl md:text-3xl'}>{item.id}</div>
                         <div className={`flex flex-col gap-y-4 flex-grow transition-all ease-out duration-300`}>
-                            <div className={'font-semibold text-2xl'}>{item.question}</div>
+                            <div className={'font-semibold text-xl md:text-2xl'}>{item.question}</div>
                             <div
                                 className={`${selected !== item.id && 'collapse'} transition-all ease-out duration-300`}
                                 id="collapseExample"

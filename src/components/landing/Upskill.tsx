@@ -40,9 +40,9 @@ const Upskill = () => {
                             'flex flex-col relative justify-between gap-y-8 aspect-square lg:w-[23vw] bg-[#2693FF]/[60%] rounded-2xl h-[450px] hover:shadow-2xl hover:shadow-sky-700/40 transition-all ease-out duration-300'
                         }
                     >
-                        <div className={'flex gap-x-5  px-8 pt-8 items-start'}>
+                        <div className={'flex gap-x-5 px-8 pt-8 items-start'}>
                             {/* <div className={'bg-white/[40%] aspect-square rounded-lg p-4 w-7'}>{item.id}</div> */}
-                            <div className='aspect-square bg-white/[40%] w-10 h-10 items-center justify-center flex p-4 rounded-md text-xl'>
+                            <div className="aspect-square bg-white/[40%] w-10 h-10 items-center justify-center flex p-4 rounded-md text-xl">
                                 {item.id}
                             </div>
                             <div className={'text-lg'}>{item.title}</div>
@@ -52,9 +52,14 @@ const Upskill = () => {
                             <button className={'bg-white text-blue-500 rounded-full ml-8 py-2 px-4'}>
                                 {item.buttonText}
                             </button>
-                            
                         </div>
-                        <Image className='absolute right-0 bottom-0 ' draggable={false} src={item.image} width={'111'} alt={''} />
+                        <Image
+                            className="absolute right-0 bottom-0 "
+                            draggable={false}
+                            src={item.image}
+                            width={'111'}
+                            alt={''}
+                        />
                     </div>
                 ))}
             </div>

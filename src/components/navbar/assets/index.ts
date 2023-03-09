@@ -1,3 +1,4 @@
 import EdubeaconLogo from './EdubeaconLogo.png';
+import Menu from './menu.svg';
 
-export { EdubeaconLogo };
+export { EdubeaconLogo, Menu };

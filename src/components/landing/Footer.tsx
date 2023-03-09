@@ -1,6 +1,4 @@
 import React from 'react';
-import logoColored from './assets/Footer/logo-colored.svg';
-import Image from 'next/image';
 import BlueButton from '@/components/common/BlueButton';
 import WhiteButton from '@/components/common/WhiteButton';
 import { FacebookIcon, InstagramIcon, LinkedinLogo, LogoColored, TwitterIcon, YoutubeLogo } from './assets/Footer';
@@ -15,15 +13,15 @@ const socials = [
         link: '#',
     },
     {
-        icon: <TwitterIcon/>,
+        icon: <TwitterIcon />,
         link: '#',
     },
     {
-        icon: <YoutubeLogo/>,
+        icon: <YoutubeLogo />,
         link: '#',
     },
     {
-        icon: <LinkedinLogo/>,
+        icon: <LinkedinLogo />,
         link: '#',
     },
 ];
@@ -79,11 +77,10 @@ const policyLinks = [
 
 const Footer = () => {
     return (
-        <div className={'bg-[#252525] p-20  flex items-center justify-between z-10'}>
-            <div className={'flex flex-col gap-y-8 justify-between'}>
-                {/* <Image src={logoColored} alt={''} /> */}
+        <div className={'bg-[#252525] p-20 flex flex-col md:flex-row items-center justify-between z-10'}>
+            <div className={'flex flex-col gap-y-8 justify-between md:order-1 order-2'}>
                 <LogoColored />
-                <div className={'flex gap-x-3'}>
+                <div className={'flex justify-between md:gap-x-3'}>
                     {socials.map((s, index) => (
                         <a key={index} href={s.link}>
                             {s.icon}
@@ -91,7 +88,11 @@ const Footer = () => {
                     ))}
                 </div>
             </div>
-            <div className={'flex gap-x-20 font-medium text-white'}>
+            <div
+                className={
+                    'md:flex md:flex-row grid grid-rows-2 grid-cols-2 gap-20 font-medium text-white order-1 md:order-2'
+                }
+            >
                 <div>
                     <div className={'mb-5 text-navyBlue text-xl'}>Company</div>
                     {companyLinks.map((c, index) => (
@@ -117,7 +118,7 @@ const Footer = () => {
                     ))}
                 </div>
             </div>
-            <div className={'flex flex-col gap-y-5'}>
+            <div className={'hidden md:flex flex-col gap-y-5 order-3'}>
                 <BlueButton>Browse Courses</BlueButton>
                 <WhiteButton>Contact Us</WhiteButton>
                 <div className={'text-white font-medium'}>© Edubeacon, 2022.</div>
