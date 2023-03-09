@@ -20,12 +20,8 @@ const links = [
         path: '/why-edubeacon',
     },
     {
-        name: 'About',
-        path: '#',
-    },
-    {
         name: 'Contact',
-        path: '#',
+        path: '/contact',
     },
 ];
 
@@ -58,7 +54,7 @@ const Navbar = () => {
 
             {/* <Image src={logoWhite} height={80} alt={'logo'} /> */}
 
-            <div className={'flex gap-x-5 items-center text-lg'}>
+            <div className={'flex space-x-[5vw] items-center text-lg'}>
                 {links.map((link, i) => (
                     <Link
                         key={i}

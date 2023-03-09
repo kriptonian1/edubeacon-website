@@ -4,8 +4,8 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                prussianBlue: '#5766F3',
-                navyBlue: '#057CF2',
+                prussianBlue: '#057CF2',
+                navyBlue: '#51A9FF',
                 lightBlue: '#51A9FF',
                 darkBlue: '#1E1E1E',
             },

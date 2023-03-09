@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Hero = () => {
     return (
-        <div className={'flex mt-[300px] text-white items-center justify-center'}>
+        <div className={'flex mt-[20vh] text-white items-center justify-center'}>
             <Image className={'relative -translate-y-10 translate-x-5'} src={quote} alt={''} />
             <div className={'font-bold text-6xl z-10'}>
                 Why choose <span className={'text-navyBlue'}>Edubeacon?</span>

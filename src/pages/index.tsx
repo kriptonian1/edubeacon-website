@@ -10,7 +10,7 @@ import Footer from '@/components/landing/Footer';
 
 export default function Home() {
     return (
-        <Page includeNavbar includeFooter>
+        <Page >
             <div className={'w-[100vw] absolute'}>
                 <div
                     className={

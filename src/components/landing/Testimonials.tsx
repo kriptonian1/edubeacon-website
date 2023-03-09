@@ -79,8 +79,8 @@ const Testimonials = () => {
                                     <div className={'text-xl font-medium'}>{item.name}</div>
                                     <div className={'text-sm text-[#B4B4B4]'}>{item.position}</div>
                                     <div className={' flex gap-x-1'}>
-                                        {Array.from(Array(5).keys()).map((item, index) => (
-                                            <Star key={index} width="16" height="16" className={'text-[#51A9FF]'} />
+                                        {Array.from(Array(5).keys()).map((n) => (
+                                            <Star key={n} width="16" height="16" className={`${item.rating > n ? 'text-[#51A9FF]' : 'text-white'}`} />
                                         ))}
                                     </div>
 
