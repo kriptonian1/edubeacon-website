@@ -11,13 +11,6 @@ import Footer from '@/components/footer/Footer';
 export default function Home() {
     return (
         <Page>
-            <div className={'w-[100vw] absolute'}>
-                <div
-                    className={
-                        'relative -translate-y-[150px] w-[100vw] mx-auto h-[609px] rounded-full bg-gradient-radial from-[#057CF2]/[30%] to-transparent blur-[250px]'
-                    }
-                />
-            </div>
             <Navbar />
             <Hero />
             <Skills />
