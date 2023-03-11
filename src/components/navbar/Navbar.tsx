@@ -12,7 +12,7 @@ const links = [
     },
     {
         name: 'Courses',
-        path: '#',
+        path: '/courses',
     },
     {
         name: 'Why Edubeacon?',
@@ -24,7 +24,7 @@ const links = [
     },
     {
         name: 'Contact',
-        path: '#',
+        path: '/contact',
     },
 ];
 
@@ -60,7 +60,7 @@ const Navbar = () => {
                     <Image src={EdubeaconLogo} height={80} alt={'logo'} />
                 </Link>
 
-                <div className={'flex gap-x-5 items-center text-lg'}>
+                <div className={'flex gap-x-7 items-center text-lg'}>
                     {links.map((link, i) => (
                         <Link
                             key={i}
