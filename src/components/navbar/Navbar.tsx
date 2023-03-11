@@ -56,8 +56,8 @@ const Navbar = () => {
         >
             {/*Medium to large screens*/}
             <div className={'justify-between items-center hidden md:flex'}>
-                <Link href={'/'}>
-                    <Image src={EdubeaconLogo} height={80} alt={'logo'} />
+                <Link href={'/'} as={'image'}>
+                    <Image src={EdubeaconLogo} draggable={false} priority height={80} alt={'logo'} />
                 </Link>
 
                 <div className={'flex gap-x-7 items-center text-lg'}>

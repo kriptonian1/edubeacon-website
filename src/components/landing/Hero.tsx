@@ -13,6 +13,8 @@ const Hero = () => {
                 return yIndex === 0 ? 200 : 0;
             });
         }, 2100);
+        console.log('interval');
+        
         return () => clearInterval(interval);
     }, []);
 

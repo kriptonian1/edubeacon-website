@@ -9,7 +9,7 @@ const CourseBox = () => {
             <Image className="rounded-t-2xl w-full h-auto" width="0" height="0" src={sampleImage} alt="course name" />
 
             <div className="m-4">
-                <div className="font-bold text-xl pb-4 text-white">CS50's Introduction to Computer Science</div>
+                <div className="font-bold text-xl pb-4 text-white">CS50s Introduction to Computer Science</div>
 
                 <div className="text-white">by Ayush Jain</div>
                 <div className="flex justify-center mt-5">
