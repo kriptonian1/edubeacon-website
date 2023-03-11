@@ -1,7 +1,7 @@
 import React from 'react';
 import BlueButton from '@/components/common/BlueButton';
 import WhiteButton from '@/components/common/WhiteButton';
-import { FacebookIcon, InstagramIcon, LinkedinLogo, LogoColored, TwitterIcon, YoutubeLogo } from './assets/Footer';
+import { FacebookIcon, InstagramIcon, LinkedinLogo, LogoColored, TwitterIcon, YoutubeLogo } from './assets';
 
 const socials = [
     {
@@ -90,7 +90,7 @@ const Footer = () => {
             </div>
             <div
                 className={
-                    'md:flex md:flex-row grid grid-rows-2 grid-cols-2 gap-20 font-medium text-white order-1 md:order-2'
+                    'md:flex md:flex-row grid grid-rows-2 grid-cols-2 gap-5 md:gap-20 font-medium text-white order-1 md:order-2'
                 }
             >
                 <div>

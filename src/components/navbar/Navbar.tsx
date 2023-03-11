@@ -51,8 +51,8 @@ const Navbar = () => {
     return (
         <nav
             className={`${
-                hasScrolled || collapsed ? 'bg-black/50 rounded-b-xl sticky backdrop-blur-sm' : 'bg-transparent'
-            } absolute z-20 w-screen top-0 px-5 md:px-10 text-white transition-all ease-out duration-300`}
+                hasScrolled || collapsed ? 'bg-black/50 rounded-b-xl backdrop-blur-sm' : 'bg-transparent'
+            } fixed z-30 w-screen top-0 px-5 md:px-10 text-white transition-all ease-out duration-300`}
         >
             {/*Medium to large screens*/}
             <div className={'justify-between items-center hidden md:flex'}>
@@ -93,7 +93,7 @@ const Navbar = () => {
                 <div
                     className={`flex flex-col gap-y-5 items-center text-lg ${
                         collapsed ? 'h-[320px]' : 'h-0'
-                    } transition-all ease-out duration-300 overflow-y-hidden`}
+                    } transition-all ease-out duration-300 overflow-y-hidden z-20`}
                 >
                     {links.map((link, i) => (
                         <Link

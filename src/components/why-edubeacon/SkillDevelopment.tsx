@@ -1,15 +1,13 @@
 import React from 'react';
 import male from './assets/SkillDevelopment/male.png';
-import achievement from './assets/SkillDevelopment/achievement.svg';
-import chalkboard from './assets/SkillDevelopment/chalkboard.svg';
 import line from './assets/SkillDevelopment/line.svg';
 import Image from 'next/image';
 import { Achievement, Chalkboard } from './assets/SkillDevelopment';
 
 const SkillDevelopment = () => {
     return (
-        <div className={' flex gap-x-10 text-white items-center justify-center '}>
-            <div className={'flex w-[50vw] flex-col gap-y-5'}>   
+        <div className={' flex text-white items-center justify-center mx-auto'}>
+            <div className={'flex w-full md:w-[70vw] lg:w-[50vw] flex-col gap-y-5 px-5'}>
                 <div className={'border-l-4 border-l-navyBlue text-2xl font-semibold pl-5'}>
                     Your partner for skill development
                 </div>
@@ -21,7 +19,7 @@ const SkillDevelopment = () => {
                     your success is unwavering. Invest in your future and join our community of skilled professionals
                     today.
                 </div>
-                <div className={'flex gap-x-10 items-center'}>
+                <div className={'flex lg:flex-row flex-col gap-x-10 gap-y-5 items-start'}>
                     <div className={'flex gap-x-5 items-center'}>
                         <Achievement />
                         <div className={'flex flex-col gap-y-3'}>
@@ -39,7 +37,7 @@ const SkillDevelopment = () => {
                     </div>
                 </div>
             </div>
-            <Image draggable={false} className={'w-[600px]'} src={male} alt={''} />
+            <Image draggable={false} className={'w-0 md:w-[400px] lg:w-[500px] xl:w-[600px]'} src={male} alt={''} />
         </div>
     );
 };

@@ -4,7 +4,7 @@ import Hero from '@/components/why-edubeacon/Hero';
 import SkillDevelopment from '@/components/why-edubeacon/SkillDevelopment';
 import Perks from '@/components/why-edubeacon/Perks';
 import Navbar from '@/components/navbar/Navbar';
-import Footer from '@/components/landing/Footer';
+import Footer from '@/components/footer/Footer';
 
 const WhyEdubeacon = () => {
     return (

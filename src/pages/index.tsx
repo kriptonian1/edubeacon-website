@@ -6,11 +6,11 @@ import FAQ from '@/components/landing/FAQ';
 import Testimonials from '@/components/landing/Testimonials';
 import Page from '@/components/common/Page';
 import Navbar from '@/components/navbar/Navbar';
-import Footer from '@/components/landing/Footer';
+import Footer from '@/components/footer/Footer';
 
 export default function Home() {
     return (
-        <Page >
+        <Page>
             <div className={'w-[100vw] absolute'}>
                 <div
                     className={

@@ -23,10 +23,16 @@ const perks = [
 
 const Perks = () => {
     return (
-        <div className={'w-[75vw] grid grid-cols-2 grid-rows-2 gap-16 mx-auto text-white mb-20 z-10'}>
+        <div
+            className={
+                'w-full px-5 md:w-[75vw] grid md:grid-cols-2 md:grid-rows-2 grid-cols-1 grid-rows-4 gap-8 md:gap-16 mx-auto text-white mb-20 z-10'
+            }
+        >
             {perks.map((perk, index) => (
                 <div key={index} className={'flex flex-col gap-y-6'}>
-                    <div className={'font-semibold text-2xl pl-5 border-l-4 border-l-navyBlue'}>{perk.title}</div>
+                    <div className={'font-semibold text-xl md:text-2xl pl-5 border-l-4 border-l-navyBlue'}>
+                        {perk.title}
+                    </div>
                     <div className={'text-[#C8C8DC] pl-5'}>{perk.body}</div>
                 </div>
             ))}
