@@ -37,7 +37,7 @@ const Upskill = () => {
                     <div
                         key={item.id}
                         className={
-                            'flex flex-col relative justify-between gap-y-8 aspect-square lg:w-[23vw] bg-[#2693FF]/[60%] rounded-2xl h-[450px] hover:shadow-2xl hover:shadow-sky-700/40 transition-all ease-out duration-300'
+                            'flex flex-col relative justify-between gap-y-8 aspect-square w-[90vw] md:w-[23vw] bg-[#2693FF]/[60%] rounded-2xl h-[450px] hover:shadow-2xl hover:shadow-sky-700/40 transition-all ease-out duration-300'
                         }
                     >
                         <div className={'flex gap-x-5 px-8 pt-8 items-start'}>

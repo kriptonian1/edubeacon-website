@@ -66,7 +66,7 @@ const Testimonials = () => {
                 >
                     {data.map((item, index) => (
                         <SwiperSlide key={index}>
-                            <div className={'flex gap-x-4 rounded-lg bg-white/[15%] text-left p-5  w-[30rem]'}>
+                            <div className={'flex gap-x-4 rounded-lg bg-white/[15%] text-left p-5 w-[10rem] md:w-[30rem]'}>
                                 <div className={'flex'}>
                                     <div className={'min-w-[80px] h-[80px] bg-lightBlue rounded-full z-0 relative'} />
                                     <Image

@@ -19,10 +19,6 @@ const links = [
         path: '/why-edubeacon',
     },
     {
-        name: 'About',
-        path: '#',
-    },
-    {
         name: 'Contact',
         path: '/contact',
     },
