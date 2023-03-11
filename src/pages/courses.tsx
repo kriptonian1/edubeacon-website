@@ -1,7 +1,7 @@
 import { ComaDown, ComaUp } from '@/components/common/assets';
 import Page from '@/components/common/Page';
 import CourseBox from '@/components/courses/CourseBox';
-import Footer from '@/components/landing/Footer';
+import Footer from '@/components/footer/Footer';
 import Navbar from '@/components/navbar/Navbar';
 import React from 'react';
 
