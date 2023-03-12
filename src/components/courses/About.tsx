@@ -7,7 +7,7 @@ export type AboutProps = {
 
 const About: React.FC<{ data: AboutProps }> = props => {
     return (
-        <div className={'lg:w-[70vw] mx-auto flex flex-col gap-y-5 text-white px-5'} id={'about'}>
+        <div className={'lg:w-[80vw] mx-auto flex flex-col gap-y-5 text-white px-5'} id={'about'}>
             <h1 className={'text-3xl font-medium border-l-4 border-l-navyBlue pl-5'}>About the course</h1>
             <div className={'flex text-[#C8C8DC]'}>
                 <div className={'font-bold text-white'}>Duration</div>:

@@ -1,0 +1,528 @@
+Index: src/components/landing/Footer.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\nimport logoColored from './assets/Footer/logo-colored.svg';\nimport Image from 'next/image';\nimport BlueButton from '@/components/common/BlueButton';\nimport WhiteButton from '@/components/common/WhiteButton';\nimport { FacebookIcon, InstagramIcon, LinkedinLogo, LogoColored, TwitterIcon, YoutubeLogo } from './assets/Footer';\n\nconst socials = [\n    {\n        icon: <FacebookIcon />,\n        link: '#',\n    },\n    {\n        icon: <InstagramIcon />,\n        link: '#',\n    },\n    {\n        icon: <TwitterIcon/>,\n        link: '#',\n    },\n    {\n        icon: <YoutubeLogo/>,\n        link: '#',\n    },\n    {\n        icon: <LinkedinLogo/>,\n        link: '#',\n    },\n];\n\nconst companyLinks = [\n    {\n        name: 'About',\n        link: '#',\n    },\n    {\n        name: 'Careers',\n        link: '#',\n    },\n    {\n        name: 'Team',\n        link: '#',\n    },\n];\n\nconst resourceLinks = [\n    {\n        name: 'Safety',\n        link: '#',\n    },\n    {\n        name: 'Support',\n        link: '#',\n    },\n    {\n        name: 'Branding',\n        link: '#',\n    },\n];\n\nconst policyLinks = [\n    {\n        name: 'Terms & Conditions',\n        link: '#',\n    },\n    {\n        name: 'Acknowledgement',\n        link: '#',\n    },\n    {\n        name: 'Privacy',\n        link: '#',\n    },\n    {\n        name: 'License',\n        link: '#',\n    },\n];\n\nconst Footer = () => {\n    return (\n        <div className={'bg-[#252525] p-20 flex items-center justify-between z-10'}>\n            <div className={'flex flex-col gap-y-8 justify-between'}>\n                {/* <Image src={logoColored} alt={''} /> */}\n                <LogoColored />\n                <div className={'flex gap-x-3'}>\n                    {socials.map((s, index) => (\n                        <a key={index} href={s.link}>\n                            {s.icon}\n                        </a>\n                    ))}\n                </div>\n            </div>\n            <div className={'flex gap-x-20 font-medium text-white'}>\n                <div>\n                    <div className={'mb-5 text-navyBlue text-xl'}>Company</div>\n                    {companyLinks.map((c, index) => (\n                        <a href={c.link} key={index} className={'block text-sm mb-3'}>\n                            {c.name}\n                        </a>\n                    ))}\n                </div>\n                <div>\n                    <div className={'mb-5 text-navyBlue text-xl'}>Resources</div>\n                    {resourceLinks.map((c, index) => (\n                        <a href={c.link} key={index} className={'block text-sm mb-3'}>\n                            {c.name}\n                        </a>\n                    ))}\n                </div>\n                <div>\n                    <div className={'mb-5 text-navyBlue text-xl'}>Policy</div>\n                    {policyLinks.map((c, index) => (\n                        <a href={c.link} key={index} className={'block text-sm mb-3'}>\n                            {c.name}\n                        </a>\n                    ))}\n                </div>\n            </div>\n            <div className={'flex flex-col gap-y-5'}>\n                <BlueButton>Browse Courses</BlueButton>\n                <WhiteButton>Contact Us</WhiteButton>\n                <div className={'text-white font-medium'}>© Edubeacon, 2022.</div>\n            </div>\n        </div>\n    );\n};\n\nexport default Footer;\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/landing/Footer.tsx b/src/components/landing/Footer.tsx
+--- a/src/components/landing/Footer.tsx	(revision 48f393951676c7ce2c65ec151a0ddf81a6e24e34)
++++ b/src/components/landing/Footer.tsx	(date 1678370366700)
+@@ -1,6 +1,4 @@
+ import React from 'react';
+-import logoColored from './assets/Footer/logo-colored.svg';
+-import Image from 'next/image';
+ import BlueButton from '@/components/common/BlueButton';
+ import WhiteButton from '@/components/common/WhiteButton';
+ import { FacebookIcon, InstagramIcon, LinkedinLogo, LogoColored, TwitterIcon, YoutubeLogo } from './assets/Footer';
+@@ -15,15 +13,15 @@
+         link: '#',
+     },
+     {
+-        icon: <TwitterIcon/>,
++        icon: <TwitterIcon />,
+         link: '#',
+     },
+     {
+-        icon: <YoutubeLogo/>,
++        icon: <YoutubeLogo />,
+         link: '#',
+     },
+     {
+-        icon: <LinkedinLogo/>,
++        icon: <LinkedinLogo />,
+         link: '#',
+     },
+ ];
+@@ -79,11 +77,10 @@
+ 
+ const Footer = () => {
+     return (
+-        <div className={'bg-[#252525] p-20 flex items-center justify-between z-10'}>
+-            <div className={'flex flex-col gap-y-8 justify-between'}>
+-                {/* <Image src={logoColored} alt={''} /> */}
++        <div className={'bg-[#252525] p-20 flex flex-col md:flex-row items-center justify-between z-10'}>
++            <div className={'flex flex-col gap-y-8 justify-between md:order-1 order-2'}>
+                 <LogoColored />
+-                <div className={'flex gap-x-3'}>
++                <div className={'flex justify-between md:gap-x-3'}>
+                     {socials.map((s, index) => (
+                         <a key={index} href={s.link}>
+                             {s.icon}
+@@ -91,7 +88,11 @@
+                     ))}
+                 </div>
+             </div>
+-            <div className={'flex gap-x-20 font-medium text-white'}>
++            <div
++                className={
++                    'md:flex md:flex-row grid grid-rows-2 grid-cols-2 gap-20 font-medium text-white order-1 md:order-2'
++                }
++            >
+                 <div>
+                     <div className={'mb-5 text-navyBlue text-xl'}>Company</div>
+                     {companyLinks.map((c, index) => (
+@@ -117,7 +118,7 @@
+                     ))}
+                 </div>
+             </div>
+-            <div className={'flex flex-col gap-y-5'}>
++            <div className={'hidden md:flex flex-col gap-y-5 order-3'}>
+                 <BlueButton>Browse Courses</BlueButton>
+                 <WhiteButton>Contact Us</WhiteButton>
+                 <div className={'text-white font-medium'}>© Edubeacon, 2022.</div>
+Index: src/pages/index.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import Hero from '@/components/landing/Hero';\nimport Skills from '@/components/landing/Skills';\nimport WhyChoose from '@/components/landing/WhyChoose';\nimport Upskill from '@/components/landing/Upskill';\nimport FAQ from '@/components/landing/FAQ';\nimport Testimonials from '@/components/landing/Testimonials';\nimport Page from '@/components/common/Page';\nimport Navbar from '@/components/navbar/Navbar';\nimport Footer from '@/components/landing/Footer';\n\nexport default function Home() {\n    return (\n        <Page includeNavbar includeFooter>\n            <div className={'w-[100vw] absolute'}>\n                <div\n                    className={\n                        'relative -translate-y-[150px] w-[100vw] mx-auto h-[609px] rounded-full bg-gradient-radial from-[#057CF2]/[30%] to-transparent blur-[250px]'\n                    }\n                />\n            </div>\n            <Navbar />\n            <Hero />\n            <Skills />\n            <WhyChoose />\n            <Upskill />\n            <FAQ />\n            <Testimonials />\n            <Footer />\n        </Page>\n    );\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pages/index.tsx b/src/pages/index.tsx
+--- a/src/pages/index.tsx	(revision 48f393951676c7ce2c65ec151a0ddf81a6e24e34)
++++ b/src/pages/index.tsx	(date 1678367689603)
+@@ -24,7 +24,7 @@
+             <WhyChoose />
+             <Upskill />
+             <FAQ />
+-            <Testimonials />
++            {/*<Testimonials />*/}
+             <Footer />
+         </Page>
+     );
+Index: src/pages/why-edubeacon.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\nimport Page from '@/components/common/Page';\nimport Hero from '@/components/why-edubeacon/Hero';\nimport SkillDevelopment from '@/components/why-edubeacon/SkillDevelopment';\nimport Perks from '@/components/why-edubeacon/Perks';\n\nconst WhyEdubeacon = () => {\n    return (\n        <Page includeNavbar includeFooter>\n            <div className={'w-[100vw] absolute'}>\n                <div\n                    className={\n                        'relative -translate-y-[150px] w-[1024px] mx-auto h-[609px] rounded-full bg-gradient-radial from-[#057CF2]/[30%] to-transparent blur-[250px]'\n                    }\n                />\n            </div>\n            <Hero />\n            <SkillDevelopment />\n            <Perks />\n        </Page>\n    );\n};\n\nexport default WhyEdubeacon;\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pages/why-edubeacon.tsx b/src/pages/why-edubeacon.tsx
+--- a/src/pages/why-edubeacon.tsx	(revision 48f393951676c7ce2c65ec151a0ddf81a6e24e34)
++++ b/src/pages/why-edubeacon.tsx	(date 1678295453211)
+@@ -3,6 +3,8 @@
+ import Hero from '@/components/why-edubeacon/Hero';
+ import SkillDevelopment from '@/components/why-edubeacon/SkillDevelopment';
+ import Perks from '@/components/why-edubeacon/Perks';
++import Navbar from '@/components/navbar/Navbar';
++import Footer from '@/components/landing/Footer';
+ 
+ const WhyEdubeacon = () => {
+     return (
+@@ -14,9 +16,11 @@
+                     }
+                 />
+             </div>
++            <Navbar />
+             <Hero />
+             <SkillDevelopment />
+             <Perks />
++            <Footer />
+         </Page>
+     );
+ };
+Index: src/components/landing/Hero.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import BlueButton from '@/components/common/BlueButton';\nimport WhiteButton from '@/components/common/WhiteButton';\nimport rightAsset from './assets/Hero/right-asset.svg';\nimport Image from 'next/image';\nimport React from 'react';\nimport { LeftAsset, Line, RightAsset } from './assets/Hero';\n\nconst Hero = () => {\n    const [yIndexLeft, setYIndexLeft] = React.useState(0);\n    const [yIndexRight, setYIndexRight] = React.useState(200);\n\n    React.useEffect(() => {\n        const interval = setInterval(() => {\n            setYIndexLeft(yIndex => {\n                return yIndex === 0 ? 200 : 0;\n            });\n        }, 2100);\n        return () => clearInterval(interval);\n    }, []);\n\n    React.useEffect(() => {\n        const interval = setInterval(() => {\n            setYIndexRight(yIndex => {\n                return yIndex === 0 ? 200 : 0;\n            });\n        }, 4100);\n        return () => clearInterval(interval);\n    }, []);\n\n    return (\n        <div className={'pt-[25vh]  z-10 relative flex gap-x-10 justify-center items-start'}>\n            {/* Left books animation */}\n            <div\n                style={{\n                    transform: `translateY(${yIndexLeft}px)`,\n                }}\n                className={`transition-all hidden md:block ease-in-out duration-[2000ms] relative`}\n            >\n                <LeftAsset />\n            </div>\n\n            <div className=\"text-white text-center items-center flex flex-col gap-y-5\">\n                <div className={'font-bold text-7xl'}>\n                    Unlock your <span className={'text-navyBlue'}>Potential</span>\n                </div>\n                <span className={'text-3xl'}>\n                    with <span className={'text-lightBlue'}>Edubeacon</span>\n                </span>\n                <div className={'font-medium text-lg'}>\n                    Learn practical skills to transform your career, anytime and anywhere with Edubeacon.\n                </div>\n                <div className={'flex gap-x-5 mt-5'}>\n                    <BlueButton className={'w-[180px]'}>Live Courses</BlueButton>\n                    <div className=\"mt-[60px]\">\n                        <Line />\n                    </div>\n                    <WhiteButton className={'w-[180px]'}>Recorded Courses</WhiteButton>\n                </div>\n            </div>\n            {/* <Image\n                style={{\n                    transform: `translateY(${yIndexRight}px)`,\n                }}\n                className={`transition-all ease-in-out duration-[4000ms] relative`}\n                src={rightAsset}\n                alt={''}\n                draggable={false}\n            /> */}\n            <div\n                style={{\n                    transform: `translateY(${yIndexRight}px)`,\n                }}\n                className={`transition-all ease-in-out duration-[4000ms] relative hidden md:block`}\n            >\n                <RightAsset />\n            </div>\n        </div>\n    );\n};\n\nexport default Hero;\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/landing/Hero.tsx b/src/components/landing/Hero.tsx
+--- a/src/components/landing/Hero.tsx	(revision 48f393951676c7ce2c65ec151a0ddf81a6e24e34)
++++ b/src/components/landing/Hero.tsx	(date 1678367735938)
+@@ -1,7 +1,5 @@
+ import BlueButton from '@/components/common/BlueButton';
+ import WhiteButton from '@/components/common/WhiteButton';
+-import rightAsset from './assets/Hero/right-asset.svg';
+-import Image from 'next/image';
+ import React from 'react';
+ import { LeftAsset, Line, RightAsset } from './assets/Hero';
+ 
+@@ -28,7 +26,7 @@
+     }, []);
+ 
+     return (
+-        <div className={'pt-[25vh]  z-10 relative flex gap-x-10 justify-center items-start'}>
++        <div className={'pt-[25vh] z-10 relative flex gap-x-10 justify-center items-start px-5'}>
+             {/* Left books animation */}
+             <div
+                 style={{
+@@ -40,32 +38,23 @@
+             </div>
+ 
+             <div className="text-white text-center items-center flex flex-col gap-y-5">
+-                <div className={'font-bold text-7xl'}>
++                <div className={'font-bold text-3xl md:text-5xl lg:text-7xl'}>
+                     Unlock your <span className={'text-navyBlue'}>Potential</span>
+                 </div>
+-                <span className={'text-3xl'}>
++                <span className={'text-xl md:text-2xl lg:text-3xl'}>
+                     with <span className={'text-lightBlue'}>Edubeacon</span>
+                 </span>
+                 <div className={'font-medium text-lg'}>
+                     Learn practical skills to transform your career, anytime and anywhere with Edubeacon.
+                 </div>
+-                <div className={'flex gap-x-5 mt-5'}>
+-                    <BlueButton className={'w-[180px]'}>Live Courses</BlueButton>
+-                    <div className="mt-[60px]">
++                <div className={'flex md:flex-row flex-col gap-5 mt-5 items-center'}>
++                    <BlueButton className={'w-[180px] order-1'}>Live Courses</BlueButton>
++                    <div className="order-3 md:order-2 md:mt-[60px]">
+                         <Line />
+                     </div>
+-                    <WhiteButton className={'w-[180px]'}>Recorded Courses</WhiteButton>
++                    <WhiteButton className={'w-[180px] md:order-3 order-2'}>Recorded Courses</WhiteButton>
+                 </div>
+             </div>
+-            {/* <Image
+-                style={{
+-                    transform: `translateY(${yIndexRight}px)`,
+-                }}
+-                className={`transition-all ease-in-out duration-[4000ms] relative`}
+-                src={rightAsset}
+-                alt={''}
+-                draggable={false}
+-            /> */}
+             <div
+                 style={{
+                     transform: `translateY(${yIndexRight}px)`,
+Index: src/components/navbar/assets/index.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import EdubeaconLogo from './EdubeaconLogo.png';\n\nexport { EdubeaconLogo };\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/navbar/assets/index.ts b/src/components/navbar/assets/index.ts
+--- a/src/components/navbar/assets/index.ts	(revision 48f393951676c7ce2c65ec151a0ddf81a6e24e34)
++++ b/src/components/navbar/assets/index.ts	(date 1678297675420)
+@@ -1,3 +1,4 @@
+ import EdubeaconLogo from './EdubeaconLogo.png';
++import Menu from './menu.svg';
+ 
+-export { EdubeaconLogo };
++export { EdubeaconLogo, Menu };
+Index: src/components/common/Page.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\nimport { Poppins } from 'next/font/google';\ntype Props = {\n    children?: React.ReactNode;\n    className?: string;\n    includeNavbar?: boolean;\n    includeFooter?: boolean;\n};\n\nconst poppins = Poppins({\n    subsets: ['latin'],\n    weight: ['400', '500', '600', '700', '800'],\n});\n\nconst Page: React.FC<Props> = ({ className, children, includeNavbar, includeFooter }) => {\n    return (\n        <div className={`${className} bg-[#111111] ${poppins.className} flex flex-col gap-y-[80px] min-h-screen`}>\n            {children}\n            {/* {includeFooter && <Footer />} */}\n        </div>\n    );\n};\n\nexport default Page;\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/common/Page.tsx b/src/components/common/Page.tsx
+--- a/src/components/common/Page.tsx	(revision 48f393951676c7ce2c65ec151a0ddf81a6e24e34)
++++ b/src/components/common/Page.tsx	(date 1678295453223)
+@@ -16,7 +16,6 @@
+     return (
+         <div className={`${className} bg-[#111111] ${poppins.className} flex flex-col gap-y-[80px] min-h-screen`}>
+             {children}
+-            {/* {includeFooter && <Footer />} */}
+         </div>
+     );
+ };
+Index: src/components/landing/Upskill.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\nimport Image from 'next/image';\nimport { asset1, asset2, asset3 } from './assets/Upskill';\n\nconst data = [\n    {\n        id: 1,\n        title: 'Unlock Your Potential With Edubeacon',\n        body: \"Whether you're looking to learn new skills or upgrade your existing ones, we've got you covered. \",\n        buttonText: 'Sign up today',\n        image: asset1,\n    },\n    {\n        id: 2,\n        title: \"Don't let a lack of skills hold you back.\",\n        body: 'Our expert instructors will guide you every step of the way, so you can reach your goals and achieve your dreams.',\n        buttonText: 'Book a consultation',\n        image: asset2,\n    },\n    {\n        id: 3,\n        title: \"Get the skills you need to thrive in today's fast-paced world.\",\n        body: \"We believe that everyone has the potential to succeed. That's why we offer a range of courses, designed to help you stay relevant and competitive in your field.\",\n        buttonText: 'Own your career',\n        image: asset3,\n    },\n];\n\nconst Upskill = () => {\n    return (\n        <div className={'flex flex-col gap-y-10 text-white'}>\n            <div className={'text-2xl text-center'}>\n                Upskill Yourself And <span className={'font-bold'}>Get Placed</span>\n            </div>\n            <div className={'flex flex-col md:flex-row gap-y-10  md:gap-x-10 items-center justify-center'}>\n                {data.map(item => (\n                    <div\n                        key={item.id}\n                        className={\n                            'flex flex-col relative justify-between gap-y-8 aspect-square lg:w-[23vw] bg-[#2693FF]/[60%] rounded-2xl h-[450px] hover:shadow-2xl hover:shadow-sky-700/40 transition-all ease-out duration-300'\n                        }\n                    >\n                        <div className={'flex gap-x-5  px-8 pt-8 items-start'}>\n                            {/* <div className={'bg-white/[40%] aspect-square rounded-lg p-4 w-7'}>{item.id}</div> */}\n                            <div className='aspect-square bg-white/[40%] w-10 h-10 items-center justify-center flex p-4 rounded-md text-xl'>\n                                {item.id}\n                            </div>\n                            <div className={'text-lg'}>{item.title}</div>\n                        </div>\n                        <div className={' px-8'}>{item.body}</div>\n                        <div className={'flex justify-between mb-14 items-start'}>\n                            <button className={'bg-white text-blue-500 rounded-full ml-8 py-2 px-4'}>\n                                {item.buttonText}\n                            </button>\n                            \n                        </div>\n                        <Image className='absolute right-0 bottom-0 ' draggable={false} src={item.image} width={'111'} alt={''} />\n                    </div>\n                ))}\n            </div>\n        </div>\n    );\n};\n\nexport default Upskill;\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/landing/Upskill.tsx b/src/components/landing/Upskill.tsx
+--- a/src/components/landing/Upskill.tsx	(revision 48f393951676c7ce2c65ec151a0ddf81a6e24e34)
++++ b/src/components/landing/Upskill.tsx	(date 1678369377146)
+@@ -40,9 +40,9 @@
+                             'flex flex-col relative justify-between gap-y-8 aspect-square lg:w-[23vw] bg-[#2693FF]/[60%] rounded-2xl h-[450px] hover:shadow-2xl hover:shadow-sky-700/40 transition-all ease-out duration-300'
+                         }
+                     >
+-                        <div className={'flex gap-x-5  px-8 pt-8 items-start'}>
++                        <div className={'flex gap-x-5 px-8 pt-8 items-start'}>
+                             {/* <div className={'bg-white/[40%] aspect-square rounded-lg p-4 w-7'}>{item.id}</div> */}
+-                            <div className='aspect-square bg-white/[40%] w-10 h-10 items-center justify-center flex p-4 rounded-md text-xl'>
++                            <div className="aspect-square bg-white/[40%] w-10 h-10 items-center justify-center flex p-4 rounded-md text-xl">
+                                 {item.id}
+                             </div>
+                             <div className={'text-lg'}>{item.title}</div>
+@@ -52,9 +52,14 @@
+                             <button className={'bg-white text-blue-500 rounded-full ml-8 py-2 px-4'}>
+                                 {item.buttonText}
+                             </button>
+-                            
+                         </div>
+-                        <Image className='absolute right-0 bottom-0 ' draggable={false} src={item.image} width={'111'} alt={''} />
++                        <Image
++                            className="absolute right-0 bottom-0 "
++                            draggable={false}
++                            src={item.image}
++                            width={'111'}
++                            alt={''}
++                        />
+                     </div>
+                 ))}
+             </div>
+Index: src/components/landing/Testimonials.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\nimport lady1 from './assets/Testimonials/lady1.png';\nimport lady2 from './assets/Testimonials/lady2.png';\nimport man from './assets/Testimonials/man.png';\nimport Image from 'next/image';\nimport { Star } from '@mui/icons-material';\nimport { Swiper, SwiperSlide } from 'swiper/react';\nimport 'swiper/css';\nimport { Autoplay } from 'swiper';\n\nconst data = [\n    {\n        name: 'Sara Ali Khan',\n        rating: 4,\n        position: 'Cardiologist Patient',\n        comments: 'Thanks for all the services,no doubt it is the best hospital.',\n        image: lady1,\n    },\n    {\n        name: 'Sara Ali Khan',\n        rating: 3,\n        position: 'Cardiologist Patient',\n        comments: 'Thanks for all the services,no doubt it is the best hospital.',\n        image: lady1,\n    },\n    {\n        name: 'Simon Targett',\n        rating: 5,\n        position: 'Cardiologist Patient',\n        comments: 'Thanks for all the services,no doubt it is the best hospital.',\n        image: man,\n    },\n    {\n        name: 'Sara Ali Khan',\n        rating: 4,\n        position: 'Cardiologist Patient',\n        comments: 'Thanks for all the services,no doubt it is the best hospital.',\n        image: lady2,\n    },\n    {\n        name: 'Simon Targett',\n        rating: 4,\n        position: 'Cardiologist Patient',\n        comments: 'Thanks for all the services,no doubt it is the best hospital.',\n        image: man,\n    },\n];\n\nconst Testimonials = () => {\n    return (\n        <div className={'flex flex-col gap-y-16 items-center justify-center text-white z-10 pb-[200px]'}>\n            <div className={'flex flex-col gap-y-3 text-center'}>\n                <div className={'text-4xl font-medium'}>Graduate&apos;s Testimonials</div>\n                <div className={'text-lg text-[#B4B4B4]'}>Let’s see what our happy graduates say</div>\n            </div>\n            <div className={'flex gap-12  flex-row items-center justify-center'}>\n                <Swiper\n                    className=\"mySwiper flex gap-12  flex-row items-center justify-center\"\n                    spaceBetween={1}\n                    slidesPerView={5}\n                    autoplay={{\n                        delay: 1000,\n                        disableOnInteraction: false,\n                    }}\n                    modules={[Autoplay]}\n                >\n                    {data.map((item, index) => (\n                        <SwiperSlide key={index}>\n                            <div className={'flex gap-x-4 rounded-lg bg-white/[15%] text-left p-5  w-[30rem]'}>\n                                <div className={'flex'}>\n                                    <div className={'min-w-[80px] h-[80px] bg-lightBlue rounded-full z-0 relative'} />\n                                    <Image\n                                        src={item.image}\n                                        alt={''}\n                                        className={'relative right-[70px] z-10 min-w-[80px] h-[80px]'}\n                                    />\n                                </div>\n                                <div className={'flex flex-col gap-y-3 flex-grow'}>\n                                    <div className={'text-xl font-medium'}>{item.name}</div>\n                                    <div className={'text-sm text-[#B4B4B4]'}>{item.position}</div>\n                                    <div className={' flex gap-x-1'}>\n                                        {Array.from(Array(5).keys()).map((item, index) => (\n                                            <Star key={index} width=\"16\" height=\"16\" className={'text-[#51A9FF]'} />\n                                        ))}\n                                    </div>\n\n                                    <div>{item.comments}</div>\n                                </div>\n                            </div>\n                        </SwiperSlide>\n                    ))}\n                </Swiper>\n            </div>\n        </div>\n    );\n};\n\nexport default Testimonials;\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/landing/Testimonials.tsx b/src/components/landing/Testimonials.tsx
+--- a/src/components/landing/Testimonials.tsx	(revision 48f393951676c7ce2c65ec151a0ddf81a6e24e34)
++++ b/src/components/landing/Testimonials.tsx	(date 1678296615708)
+@@ -79,8 +79,13 @@
+                                     <div className={'text-xl font-medium'}>{item.name}</div>
+                                     <div className={'text-sm text-[#B4B4B4]'}>{item.position}</div>
+                                     <div className={' flex gap-x-1'}>
+-                                        {Array.from(Array(5).keys()).map((item, index) => (
+-                                            <Star key={index} width="16" height="16" className={'text-[#51A9FF]'} />
++                                        {Array.from(Array(5).keys()).map(n => (
++                                            <Star
++                                                key={n}
++                                                width="16"
++                                                height="16"
++                                                className={`${item.rating > n ? 'text-[#51A9FF]' : 'text-white'}`}
++                                            />
+                                         ))}
+                                     </div>
+ 
+Index: src/components/landing/WhyChoose.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\nimport { Swiper, SwiperSlide } from 'swiper/react';\nimport 'swiper/css';\nimport { Autoplay } from 'swiper';\n\nconst data = [\n    {\n        title: 'Placement Assistance',\n        color: '#62FFB3',\n    },\n    {\n        title: 'Personality Development',\n        color: '#62AAFF',\n    },\n    {\n        title: 'Practical Project Oriented Class',\n        color: '#FF2681',\n    },\n    {\n        title: 'Live Projects for Practice',\n        color: '#EA4335',\n    },\n    {\n        title: 'Personality Development',\n        color: '#FEDA77',\n    },\n    {\n        title: ' Job Oriented Program ',\n        color: '#62FFB3',\n    },\n    {\n        title: 'Customized Syllabus',\n        color: '#62AAFF',\n    },\n    {\n        title: 'Achieve More',\n        color: '#FF2681',\n    },\n    {\n        title: 'Unleash Your Potential',\n        color: '#EA4335',\n    },\n];\n\n\n\nconst WhyChoose = () => {\n    return (\n        <div className={'text-white flex flex-col gap-y-16 items-center'}>\n            <div className={'text-2xl text-center'}>\n                Why choose <span className={'font-bold'}>Edubeacon</span>\n            </div>\n            <div className={'flex gap-4 w-screen flex-wrap break-all items-center justify-center'}>\n                <Swiper\n                    className=\"mySwiper flex gap-4  flex-wrap break-all items-center justify-center\"\n                    spaceBetween={100}\n                    slidesPerView={5}\n                    autoplay={{\n                        delay: 1000,\n                        disableOnInteraction: false,\n                    }}\n                    modules={[Autoplay]}\n                >\n                    {data.map((item, index) => {\n                        return (\n                            <SwiperSlide key={index}>\n                                <div\n                                    className={`flex text-sm gap-x-4 items-center min-w-[255px] bg-[#F5F8FF]/[10%] cursor-grab rounded-lg px-4 py-2`}\n                                >\n                                    <div\n                                        className={`w-[25px] h-[25px] rounded-full`}\n                                        style={{ backgroundColor: item.color }}\n                                    />\n                                    <div className={'font-medium'}>{item.title}</div>\n                                </div>\n                            </SwiperSlide>\n                        );\n                    })}\n                </Swiper>\n            </div>\n        </div>\n    );\n};\n\nexport default WhyChoose;\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/landing/WhyChoose.tsx b/src/components/landing/WhyChoose.tsx
+--- a/src/components/landing/WhyChoose.tsx	(revision 48f393951676c7ce2c65ec151a0ddf81a6e24e34)
++++ b/src/components/landing/WhyChoose.tsx	(date 1678369301862)
+@@ -42,11 +42,9 @@
+     },
+ ];
+ 
+-
+-
+ const WhyChoose = () => {
+     return (
+-        <div className={'text-white flex flex-col gap-y-16 items-center'}>
++        <div className={'text-white flex flex-col gap-y-16 items-center px-5'}>
+             <div className={'text-2xl text-center'}>
+                 Why choose <span className={'font-bold'}>Edubeacon</span>
+             </div>
+Index: src/components/landing/Skills.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\n\nconst details = [\n    {\n        header: '100+',\n        body: 'Successfully Placed',\n    },\n    {\n        header: '100%',\n        body: 'Successful Placement',\n    },\n    {\n        header: '20+',\n        body: 'Tie-up Companies',\n    },\n];\n\nconst Skills = () => {\n    return (\n        <div className={'h-[50vh] flex flex-col gap-y-10 items-center justify-center text-white text-center'}>\n            <h1 className={'font-bold text-4xl'}>The Skills You Need For The Career You Want</h1>\n            <h3 className={'w-[60vw] font-medium text-lg relative z-10'}>\n                Acquire the skills you need to succeed in today’s job market. Edubeacon is an online learning platform\n                that helps students gain practical, real-world experience with digital marketing and data science. We\n                offer courses and certifications that are designed to help professionals advance their careers in just a\n                few hours per week.\n            </h3>\n            <div\n                className={\n                    'flex flex-col md:flex-row gap-x-10 w-[80vw] p-10 border-[2px] border-lightBlue rounded-lg bg-[#DBE5FF]/[15%] justify-center items-center relative z-10'\n                }\n            >\n                {details.map((detail, index) => (\n                    <div key={index} className={\"flex\"}>\n                        <div  className={'flex flex-col gap-x-10 gap-y-6 mx-10'}>\n                            <div className={'font-bold text-3xl'}>{detail.header}</div>\n                            <div className={'text-xl font-medium'}>{detail.body}</div>\n                        </div>\n                        {index !== details.length - 1 && <div className={'w-[100px] h-[2px] md:h-[100px] md:w-[2px] bg-white'}></div>}\n                    </div>\n                ))}\n            </div>\n            <div\n                className={\n                    'absolute w-[90vw] translate-y-20 mx-auto h-[292px] rounded-full bg-gradient-radial from-[#057CF2]/[30%] to-transparent blur-[250px]'\n                }\n            />\n        </div>\n    );\n};\n\nexport default Skills;\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/landing/Skills.tsx b/src/components/landing/Skills.tsx
+--- a/src/components/landing/Skills.tsx	(revision 48f393951676c7ce2c65ec151a0ddf81a6e24e34)
++++ b/src/components/landing/Skills.tsx	(date 1678368312374)
+@@ -17,9 +17,11 @@
+ 
+ const Skills = () => {
+     return (
+-        <div className={'h-[50vh] flex flex-col gap-y-10 items-center justify-center text-white text-center'}>
+-            <h1 className={'font-bold text-4xl'}>The Skills You Need For The Career You Want</h1>
+-            <h3 className={'w-[60vw] font-medium text-lg relative z-10'}>
++        <div className={'md:h-[50vh] flex flex-col gap-y-10 items-center justify-center text-white text-center px-5'}>
++            <h1 className={'font-bold text-2xl px-20 md:px-0 md:text-3xl lg:text-4xl'}>
++                The Skills You Need For The Career You Want
++            </h1>
++            <h3 className={'w-[85vw] md:w-[60vw] font-medium text-lg relative z-10'}>
+                 Acquire the skills you need to succeed in today’s job market. Edubeacon is an online learning platform
+                 that helps students gain practical, real-world experience with digital marketing and data science. We
+                 offer courses and certifications that are designed to help professionals advance their careers in just a
+@@ -31,12 +33,16 @@
+                 }
+             >
+                 {details.map((detail, index) => (
+-                    <div key={index} className={"flex"}>
+-                        <div  className={'flex flex-col gap-x-10 gap-y-6 mx-10'}>
++                    <div key={index} className={'flex md:flex-row flex-col'}>
++                        <div className={'flex flex-col md:gap-x-10 md:gap-y-6 gap-y-6 mx-10'}>
+                             <div className={'font-bold text-3xl'}>{detail.header}</div>
+                             <div className={'text-xl font-medium'}>{detail.body}</div>
+                         </div>
+-                        {index !== details.length - 1 && <div className={'w-[100px] h-[2px] md:h-[100px] md:w-[2px] bg-white'}></div>}
++                        {index !== details.length - 1 && (
++                            <div
++                                className={'w-[80%] mx-auto my-10 md:my-0 h-[4px] md:h-[100px] md:w-[2px] bg-white'}
++                            ></div>
++                        )}
+                     </div>
+                 ))}
+             </div>
+Index: src/components/landing/FAQ.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\nimport { KeyboardArrowDown } from '@mui/icons-material';\n\nconst data = [\n    {\n        id: '01',\n        question: 'What is the duration of this course?',\n        answer: 'The course duration can vary, but typically lasts between 6 to 12 weeks, depending on the program.',\n    },\n    {\n        id: '02',\n        question: 'Is prior experience required to enroll in the course? ',\n        answer: 'No, prior experience is not required. The course is designed for individuals of all levels, from beginners to experienced professionals.',\n    },\n    {\n        id: '03',\n        question: 'What is the format of the course?',\n        answer: 'The course can be delivered in a variety of formats, including in-person, online, and blended learning.',\n    },\n    {\n        id: '04',\n        question: 'Are there any prerequisites for enrolling in the course?',\n        answer: 'No, there are no specific prerequisites for enrolling in the course. However, a basic understanding of mathematics and computing would be helpful.',\n    },\n    {\n        id: '05',\n        question: 'Will I receive a certificate upon completion of the course?',\n        answer: 'Yes, you will receive a certificate of completion after successfully finishing the course and passing the required assessments.',\n    },\n];\n\nconst FAQ = () => {\n    const [selected, setSelected] = React.useState<string | null>(null);\n\n    const handleSelected = React.useCallback((id: string) => {\n        setSelected(prev => (prev === id ? null : id));\n    }, []);\n\n    return (\n        <div className={'text-white flex flex-col gap-y-10 items-center justify-center'}>\n            <div className={'font-bold text-3xl text-center'}>FAQs</div>\n            <div className={'flex flex-col w-[60vw] z-10 relative'}>\n                {data.map(item => (\n                    <button\n                        onClick={handleSelected.bind(null, item.id)}\n                        key={item.id}\n                        className={`flex gap-x-6 ${\n                            selected === item.id ? 'bg-[#057CF2]/[20%]' : 'bg-[#16171F]'\n                        } border-b-[2px] border-b-gray-600 p-10 text-left items-start`}\n                    >\n                        <div className={'text-[#3F8DC6]/[83%] font-bold text-3xl'}>{item.id}</div>\n                        <div className={`flex flex-col gap-y-4 flex-grow transition-all ease-out duration-300`}>\n                            <div className={'font-semibold text-2xl'}>{item.question}</div>\n                            <div\n                                className={`${selected !== item.id && 'collapse'} transition-all ease-out duration-300`}\n                                id=\"collapseExample\"\n                            >\n                                {item.answer}\n                            </div>\n                        </div>\n                        <div\n                            className={`${\n                                selected === item.id && 'rotate-180 relative'\n                            } translation-all ease-out duration-300`}\n                        >\n                            <KeyboardArrowDown />\n                        </div>\n                    </button>\n                ))}\n            </div>\n            <div\n                className={\n                    'absolute w-[100vw] translate-y-40 mx-auto h-[900px] rounded-full bg-gradient-radial from-[#057CF2]/[30%] to-transparent blur-[250px]'\n                }\n            />\n        </div>\n    );\n};\n\nexport default FAQ;\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/landing/FAQ.tsx b/src/components/landing/FAQ.tsx
+--- a/src/components/landing/FAQ.tsx	(revision 48f393951676c7ce2c65ec151a0ddf81a6e24e34)
++++ b/src/components/landing/FAQ.tsx	(date 1678369414510)
+@@ -39,7 +39,7 @@
+     return (
+         <div className={'text-white flex flex-col gap-y-10 items-center justify-center'}>
+             <div className={'font-bold text-3xl text-center'}>FAQs</div>
+-            <div className={'flex flex-col w-[60vw] z-10 relative'}>
++            <div className={'flex flex-col w-[85vw] md:w-[75vw] lg:w-[60vw] z-10 relative'}>
+                 {data.map(item => (
+                     <button
+                         onClick={handleSelected.bind(null, item.id)}
+@@ -48,9 +48,9 @@
+                             selected === item.id ? 'bg-[#057CF2]/[20%]' : 'bg-[#16171F]'
+                         } border-b-[2px] border-b-gray-600 p-10 text-left items-start`}
+                     >
+-                        <div className={'text-[#3F8DC6]/[83%] font-bold text-3xl'}>{item.id}</div>
++                        <div className={'text-[#3F8DC6]/[83%] font-bold text-2xl md:text-3xl'}>{item.id}</div>
+                         <div className={`flex flex-col gap-y-4 flex-grow transition-all ease-out duration-300`}>
+-                            <div className={'font-semibold text-2xl'}>{item.question}</div>
++                            <div className={'font-semibold text-xl md:text-2xl'}>{item.question}</div>
+                             <div
+                                 className={`${selected !== item.id && 'collapse'} transition-all ease-out duration-300`}
+                                 id="collapseExample"
+Index: src/components/navbar/assets/menu.svg
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/navbar/assets/menu.svg b/src/components/navbar/assets/menu.svg
+new file mode 100644
+--- /dev/null	(date 1678297620721)
++++ b/src/components/navbar/assets/menu.svg	(date 1678297620721)
+@@ -0,0 +1,3 @@
++<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
++<path d="M26.25 22.5H3.75V20H26.25V22.5ZM26.25 16.25H3.75V13.75H26.25V16.25ZM26.25 10H3.75V7.5H26.25V10Z" fill="#057CF2"/>
++</svg>
+Index: src/components/navbar/Navbar.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import logoWhite from './assets/logo-white.svg';\nimport Image from 'next/image';\nimport BlueButton from '@/components/common/BlueButton';\nimport React from 'react';\nimport { useRouter } from 'next/router';\nimport Link from 'next/link';\nimport { EdubeaconLogo } from './assets';\n\nconst links = [\n    {\n        name: 'Home',\n        path: '/',\n    },\n    {\n        name: 'Courses',\n        path: '#',\n    },\n    {\n        name: 'Why Edubeacon?',\n        path: '/why-edubeacon',\n    },\n    {\n        name: 'About',\n        path: '#',\n    },\n    {\n        name: 'Contact',\n        path: '#',\n    },\n];\n\nconst Navbar = () => {\n    const [hasScrolled, setHasScrolled] = React.useState(false);\n    const [currentPath, setCurrentPath] = React.useState('');\n    const router = useRouter();\n\n    React.useEffect(() => {\n        // Set the current path as state\n        setCurrentPath(router.pathname);\n\n        // Handle scroll event to change navbar design\n        const handleScroll = () => {\n            setHasScrolled(window.scrollY > 80);\n        };\n        window.addEventListener('scroll', handleScroll);\n        return () => window.removeEventListener('scroll', handleScroll);\n    }, [router]);\n\n    return (\n        <nav\n            className={`${\n                hasScrolled ? 'bg-black/50 rounded-b-xl sticky backdrop-blur-sm' : 'bg-transparent'\n            } absolute z-20 w-screen flex justify-between top-0 px-10 items-center text-white transition-all ease-out duration-300`}\n        >\n            <Link href={'/'}>\n                <Image src={EdubeaconLogo} height={80} alt={'logo'} />\n            </Link>\n\n            {/* <Image src={logoWhite} height={80} alt={'logo'} /> */}\n\n            <div className={'flex gap-x-5 items-center text-lg'}>\n                {links.map((link, i) => (\n                    <Link\n                        key={i}\n                        href={link.path}\n                        className={`translation-all ease-out duration-300 ${\n                            currentPath === link.path\n                                ? hasScrolled\n                                    ? 'text-[#B6ABFF]'\n                                    : 'text-navyBlue' + ' font-bold'\n                                : 'text-white'\n                        }`}\n                    >\n                        {link.name}\n                    </Link>\n                ))}\n            </div>\n            <BlueButton>Browse Courses</BlueButton>\n        </nav>\n    );\n};\n\nexport default Navbar;\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/navbar/Navbar.tsx b/src/components/navbar/Navbar.tsx
+--- a/src/components/navbar/Navbar.tsx	(revision 48f393951676c7ce2c65ec151a0ddf81a6e24e34)
++++ b/src/components/navbar/Navbar.tsx	(date 1678299557649)
+@@ -1,10 +1,9 @@
+-import logoWhite from './assets/logo-white.svg';
+ import Image from 'next/image';
+ import BlueButton from '@/components/common/BlueButton';
+ import React from 'react';
+ import { useRouter } from 'next/router';
+ import Link from 'next/link';
+-import { EdubeaconLogo } from './assets';
++import { EdubeaconLogo, Menu } from './assets';
+ 
+ const links = [
+     {
+@@ -32,6 +31,7 @@
+ const Navbar = () => {
+     const [hasScrolled, setHasScrolled] = React.useState(false);
+     const [currentPath, setCurrentPath] = React.useState('');
++    const [collapsed, setCollapsed] = React.useState(false);
+     const router = useRouter();
+ 
+     React.useEffect(() => {
+@@ -46,36 +46,73 @@
+         return () => window.removeEventListener('scroll', handleScroll);
+     }, [router]);
+ 
++    const toggleCollapseNavbar = React.useCallback(() => setCollapsed(prev => !prev), []);
++
+     return (
+         <nav
+             className={`${
+-                hasScrolled ? 'bg-black/50 rounded-b-xl sticky backdrop-blur-sm' : 'bg-transparent'
+-            } absolute z-20 w-screen flex justify-between top-0 px-10 items-center text-white transition-all ease-out duration-300`}
++                hasScrolled || collapsed ? 'bg-black/50 rounded-b-xl sticky backdrop-blur-sm' : 'bg-transparent'
++            } absolute z-20 w-screen top-0 px-5 md:px-10 text-white transition-all ease-out duration-300`}
+         >
+-            <Link href={'/'}>
+-                <Image src={EdubeaconLogo} height={80} alt={'logo'} />
+-            </Link>
++            {/*Medium to large screens*/}
++            <div className={'justify-between items-center hidden md:flex'}>
++                <Link href={'/'}>
++                    <Image src={EdubeaconLogo} height={80} alt={'logo'} />
++                </Link>
+ 
+-            {/* <Image src={logoWhite} height={80} alt={'logo'} /> */}
+-
+-            <div className={'flex gap-x-5 items-center text-lg'}>
+-                {links.map((link, i) => (
+-                    <Link
+-                        key={i}
+-                        href={link.path}
+-                        className={`translation-all ease-out duration-300 ${
+-                            currentPath === link.path
+-                                ? hasScrolled
+-                                    ? 'text-[#B6ABFF]'
+-                                    : 'text-navyBlue' + ' font-bold'
+-                                : 'text-white'
+-                        }`}
+-                    >
+-                        {link.name}
++                <div className={'flex gap-x-5 items-center text-lg'}>
++                    {links.map((link, i) => (
++                        <Link
++                            key={i}
++                            href={link.path}
++                            className={`translation-all ease-out duration-300 ${
++                                currentPath === link.path
++                                    ? hasScrolled
++                                        ? 'text-[#B6ABFF]'
++                                        : 'text-navyBlue' + ' font-bold'
++                                    : 'text-white'
++                            }`}
++                        >
++                            {link.name}
++                        </Link>
++                    ))}
++                </div>
++                <BlueButton>Browse Courses</BlueButton>
++            </div>
++
++            {/*Small screens*/}
++            <div className={'justify-between items-center flex-col md:hidden flex py-5'}>
++                <div className={'flex justify-between items-center w-full'}>
++                    <Link href={'/'}>
++                        <Image src={EdubeaconLogo} height={80} alt={'logo'} />
+                     </Link>
+-                ))}
+-            </div>
+-            <BlueButton>Browse Courses</BlueButton>
++                    <button onClick={toggleCollapseNavbar}>
++                        <Menu />
++                    </button>
++                </div>
++                <div
++                    className={`flex flex-col gap-y-5 items-center text-lg ${
++                        collapsed ? 'h-[320px]' : 'h-0'
++                    } transition-all ease-out duration-300 overflow-y-hidden`}
++                >
++                    {links.map((link, i) => (
++                        <Link
++                            key={i}
++                            href={link.path}
++                            className={`translation-all ease-out duration-300 ${
++                                currentPath === link.path
++                                    ? hasScrolled
++                                        ? 'text-[#B6ABFF]'
++                                        : 'text-navyBlue' + ' font-bold'
++                                    : 'text-white'
++                            }`}
++                        >
++                            {link.name}
++                        </Link>
++                    ))}
++                    <BlueButton>Browse Courses</BlueButton>
++                </div>
++            </div>
+         </nav>
+     );
+ };

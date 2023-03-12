@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import BlueButton from '../common/BlueButton';
 import sampleImage from './assets/sampleImage.png';
@@ -13,7 +14,9 @@ const CourseBox = () => {
 
                 <div className="text-white">by Ayush Jain</div>
                 <div className="flex justify-center mt-5">
-                    <BlueButton className='!rounded-full'>Browse Courses</BlueButton>
+                    <Link href="/coursedetail">
+                        <BlueButton className='!rounded-full'>Browse Courses</BlueButton>
+                    </Link>
                 </div>
             </div>
         </div>
