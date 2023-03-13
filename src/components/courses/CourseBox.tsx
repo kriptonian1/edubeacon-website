@@ -14,7 +14,7 @@ const CourseBox = () => {
 
                 <div className="text-white">by Ayush Jain</div>
                 <div className="flex justify-center mt-5">
-                    <Link href="/coursedetail">
+                    <Link href="/course-detail">
                         <BlueButton className='!rounded-full'>Browse Courses</BlueButton>
                     </Link>
                 </div>

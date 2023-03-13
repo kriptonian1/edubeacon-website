@@ -6,6 +6,8 @@ import Syllabus, { SyllabusProps } from '@/components/courses/Syllabus';
 import { Course } from '@/components/courses/assets/Hero';
 import { Guy } from '@/components/courses/assets/Instructor';
 import React from 'react';
+import Navbar from '@/components/navbar/Navbar';
+import Footer from '@/components/footer/Footer';
 
 type Course = {
     hero: HeroProps;
@@ -67,10 +69,12 @@ const course: Course = {
 const CourseDetail = () => {
     return (
         <Page>
+            <Navbar />
             <Hero data={course.hero} />
             <About data={course.about} />
             <Syllabus data={course.syllabus} />
             <Instructor data={course.instructor} />
+            <Footer />
         </Page>
     );
 };
