@@ -48,7 +48,7 @@ const WhyChoose = () => {
             <div className={'text-2xl text-center'}>
                 Why choose <span className={'font-bold'}>Edubeacon</span>
             </div>
-            <div className={'flex gap-4 w-screen flex-wrap break-all items-center justify-center'}>
+            <div className={'hidden md:flex gap-4 w-screen flex-wrap break-all items-center justify-center'}>
                 <Swiper
                     className="mySwiper flex gap-4  flex-wrap break-all items-center justify-center"
                     spaceBetween={100}
@@ -64,6 +64,35 @@ const WhyChoose = () => {
                             <SwiperSlide key={index}>
                                 <div
                                     className={`flex text-sm gap-x-4 items-center min-w-[255px] bg-[#F5F8FF]/[10%] cursor-grab rounded-lg px-4 py-2`}
+                                >
+                                    <div
+                                        className={`w-[25px] h-[25px] rounded-full`}
+                                        style={{ backgroundColor: item.color }}
+                                    />
+                                    <div className={'font-medium'}>{item.title}</div>
+                                </div>
+                            </SwiperSlide>
+                        );
+                    })}
+                </Swiper>
+            </div>
+            {/* Mobile */}
+            <div className={'flex md:hidden gap-4 w-screen flex-wrap break-all items-center justify-center'}>
+                <Swiper
+                    className="mySwiper flex gap-4  flex-wrap break-all items-center justify-center"
+                    spaceBetween={100}
+                    slidesPerView={1}
+                    autoplay={{
+                        delay: 1000,
+                        disableOnInteraction: false,
+                    }}
+                    modules={[Autoplay]}
+                >
+                    {data.map((item, index) => {
+                        return (
+                            <SwiperSlide key={index}>
+                                <div
+                                    className={`flex text-sm gap-x-4 items-center min-w-[255px] max-w-[255px] mx-[15vw] bg-[#F5F8FF]/[10%] cursor-grab rounded-lg px-4 py-2`}
                                 >
                                     <div
                                         className={`w-[25px] h-[25px] rounded-full`}

@@ -4,10 +4,16 @@ import CourseBox from '@/components/courses/CourseBox';
 import Footer from '@/components/footer/Footer';
 import Navbar from '@/components/navbar/Navbar';
 import React from 'react';
+import Head from 'next/head';
 
 const Courses = () => {
     return (
         <Page>
+            <Head>
+                <title>Courses | Edubeacon</title>
+                <meta property="og:image" content="https://i.postimg.cc/tCXd3Tfg/thumbnail.png"></meta>
+                <meta property="twitter:image" content="https://i.postimg.cc/tCXd3Tfg/thumbnail.png"></meta>
+            </Head>
             <div className="">
                 <div className={'w-[100vw] absolute z-[-100rem]'}>
                     <div
@@ -33,7 +39,7 @@ const Courses = () => {
                 <div className="ml-[7vw] mr-[7vw] justify-items-center relative z-[10rem] inline-grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-2 ">
                     {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => {
                         return (
-                            <div key={index} >
+                            <div key={index}>
                                 <CourseBox key={index} />
                             </div>
                         );

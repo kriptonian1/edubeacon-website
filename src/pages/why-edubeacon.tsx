@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Page from '@/components/common/Page';
 import Hero from '@/components/why-edubeacon/Hero';
 import SkillDevelopment from '@/components/why-edubeacon/SkillDevelopment';
@@ -9,6 +10,9 @@ import Footer from '@/components/footer/Footer';
 const WhyEdubeacon = () => {
     return (
         <Page>
+            <Head>
+                <title>Why-edubeacon | Edubeacon</title>
+            </Head>
             <Navbar />
             <Hero />
             <SkillDevelopment />

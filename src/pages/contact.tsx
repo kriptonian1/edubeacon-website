@@ -4,10 +4,14 @@ import ContactDetails from '@/components/contact/ContactDetails';
 import Footer from '@/components/footer/Footer';
 import Navbar from '@/components/navbar/Navbar';
 import React from 'react';
+import Head from 'next/head';
 
 const Contact = () => {
     return (
         <Page>
+            <Head>
+                <title>Contact | Edubeacon</title>
+            </Head>
             <div className={'w-[100vw] absolute '}>
                 <div
                     className={

@@ -1,5 +1,6 @@
 import BlueButton from '@/components/common/BlueButton';
 import WhiteButton from '@/components/common/WhiteButton';
+import Link from 'next/link';
 import React from 'react';
 import { LeftAsset, Line, RightAsset } from './assets/Hero';
 
@@ -14,7 +15,7 @@ const Hero = () => {
             });
         }, 2100);
         console.log('interval');
-        
+
         return () => clearInterval(interval);
     }, []);
 
@@ -54,7 +55,9 @@ const Hero = () => {
                     <div className="order-3 md:order-2 md:mt-[60px]">
                         <Line />
                     </div>
-                    <WhiteButton className={'w-[180px] md:order-3 order-2'}>Recorded Courses</WhiteButton>
+                    <Link className={'w-[180px] md:order-3 order-2'} href={'/coming-soon'}>
+                        <WhiteButton >Recorded Courses</WhiteButton>
+                    </Link>
                 </div>
             </div>
             <div

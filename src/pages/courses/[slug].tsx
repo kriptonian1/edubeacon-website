@@ -5,17 +5,19 @@ import Instructor, { InstructorProps } from '@/components/courses/Instructor';
 import Syllabus, { SyllabusProps } from '@/components/courses/Syllabus';
 import { Course } from '@/components/courses/assets/Hero';
 import { Guy } from '@/components/courses/assets/Instructor';
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 import Head from 'next/head';
 import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/footer/Footer';
+import { useRouter } from 'next/router';
+import dataScience from '../../../data/datascience';
 
 type Course = {
     hero: HeroProps;
     syllabus: SyllabusProps;
     instructor: InstructorProps;
     about: AboutProps;
-}
+};
 
 const course: Course = {
     hero: {
@@ -69,9 +71,22 @@ const course: Course = {
 };
 
 const CourseDetail = () => {
+    const router = useRouter();
+    const { slug } = router.query;
+
+    let data = null;
+
+    if (slug === 'data-science') {
+        data = dataScience;
+    }
+
+    console.log(data);
+
+    console.log(data);
+
     return (
         <Page>
-             <Head>
+            <Head>
                 <title>Course-detail | Edubeacon</title>
             </Head>
             <Navbar />
