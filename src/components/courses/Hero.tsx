@@ -33,12 +33,19 @@ const Hero: React.FC<{ data: HeroProps }> = props => {
                     <h4 className={'text-[#C8C8DC]'}>{props.data.offeredBy}</h4>
                     <BlueButton className={'w-fit'}>Request more info</BlueButton>
                 </div>
-                <props.data.courseImage className={'w-fit hidden lg:block'} />
+                
+                <Image
+                    className={'w-fit lg:block hidden md:flex'}
+                    src={props.data.courseImage}
+                    width={500}
+                    height={500}
+                    alt={`${props.data.title} thumb`}
+                />
             </div>
             {/*For large screen*/}
             <div className={'lg:flex gap-x-5 hidden'}>
                 <div className={'bg-prussianBlue/30 w-[85vw]'}>
-                    <div className={'lg:w-[67vw] mx-auto flex justify-between gap-5 items-center p-8 items-center'}>
+                    <div className={'lg:w-[67vw] mx-auto flex justify-between gap-5 items-center p-8 '}>
                         <div className={'flex gap-x-3'}>
                             <Duration />
                             <div className={'flex flex-col gap-y-3'}>
@@ -89,7 +96,7 @@ const Hero: React.FC<{ data: HeroProps }> = props => {
                         </div>
                     </div>
                 </div>
-                <Course />
+                {/* <Course /> */}
                 {/*<Image src={Course} alt={''} />*/}
             </div>
         </div>

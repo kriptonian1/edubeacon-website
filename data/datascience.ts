@@ -1,5 +1,5 @@
 import Course from "../Types";
-import {  InstructorImg } from "./assets";
+import {  DatascienceMain, InstructorImg } from "./assets";
 
 const dataScience:Course = 
     {
@@ -7,7 +7,7 @@ const dataScience:Course =
             title: 'Data Science',
             subtitle: 'Learn about the world of data science first-hand from real data scientists.',
             offeredBy: 'This course is offered by GetSmarter, an EduBeacon partner',
-            courseImage: 'Course',
+            courseImage: DatascienceMain,
             duration: {
                 total: '6 weeks',
                 weekly: '5–8 hours per week',

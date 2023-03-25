@@ -21,7 +21,8 @@ const Instructor: React.FC<{ data: InstructorProps }> = props => {
             <h1 className={'text-3xl font-medium z-10 border-l-4 border-l-navyBlue pl-5'}>About the instructor</h1>
             <div className={'flex md:flex-row flex-col justify-center items-center gap-5 z-10'}>
                 <div className={'flex flex-col gap-y-2 md:w-2/6 lg:w-1/6 items-center'}>
-                    <Image src={props.data.image} alt={''} />
+                    <Image className='rounded-full' src={props.data.image} alt={''} />
+                    {/* <Image src={Instructor} alt={''} /> */}
                     <div className={'font-bold'}>{props.data.name}</div>
                     <div className={'text-[#C8C8DC]'}>{props.data.designation}</div>
                 </div>
