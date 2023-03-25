@@ -73,7 +73,9 @@ const Navbar = () => {
                         </Link>
                     ))}
                 </div>
-                <BlueButton>Browse Courses</BlueButton>
+                <Link href={'/courses'}>
+                    <BlueButton>Browse Courses</BlueButton>
+                </Link>
             </div>
 
             {/*Small screens*/}

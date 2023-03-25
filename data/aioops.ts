@@ -4,7 +4,7 @@ import {  AioopsMain, InstructorImg } from "./assets";
 const aioops:Course = 
     {
         hero: {
-            title: 'AI OOPS',
+            title: 'AI OPS',
             subtitle: 'Learn about the fundamentals of artificial intelligence and object-oriented programming from best tech industrialist.',
             offeredBy: 'This course is offered by GetSmarter, an EduBeacon partner',
             courseImage: AioopsMain,
@@ -45,10 +45,10 @@ const aioops:Course =
             ],
         },
         instructor: {
-            name: 'Pavlos Protopapas',
+            name: 'Rajesh Thakur',
             designation: 'Scientific Program Director',
             image: InstructorImg,
-            about: 'Pavlos Protopapas is the Scientific Program Director of the Institute for Applied Computational Science(IACS) at the Harvard John A. Paulson School of Engineering and Applied Sciences. He has had a long and distinguished career as a scientist and data science educator, and currently teaches the CS109 course series for basic and advanced data science at Harvard University, as well as the capstone course for the IACS master’s program at Harvard.',
+            about: 'Rajesh Thakur is the Scientific Program Director of the Institute for Applied Computational Science(IACS) at the Harvard John A. Paulson School of Engineering and Applied Sciences. He has had a long and distinguished career as a scientist and data science educator, and currently teaches the CS109 course series for basic and advanced data science at Harvard University, as well as the capstone course for the IACS master’s program at Harvard.',
         },
     }
 ;

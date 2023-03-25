@@ -17,6 +17,14 @@ export default function Home() {
                 <title>Edubeacon</title>
                 <meta property="og:image" content="https://i.postimg.cc/tCXd3Tfg/thumbnail.png" />
                 <meta property="twitter:image" content="https://i.postimg.cc/tCXd3Tfg/thumbnail.png" />
+                <meta
+                    name="description"
+                    content="Acquire the skills you need to succeed in today’s job market. Edubeacon is an online learning platform that helps students gain practical, real-world experience with digital marketing and data science. We offer courses and certifications that are designed to help professionals advance their careers in just a few hours per week."
+                />
+                <meta
+                    name="og:description"
+                    content="Acquire the skills you need to succeed in today’s job market. Edubeacon is an online learning platform that helps students gain practical, real-world experience with digital marketing and data science. We offer courses and certifications that are designed to help professionals advance their careers in just a few hours per week."
+                />
             </Head>
             <Navbar />
             <Hero />
