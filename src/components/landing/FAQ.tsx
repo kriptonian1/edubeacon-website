@@ -1,33 +1,35 @@
 import React from 'react';
 import { KeyboardArrowDown } from '@mui/icons-material';
+import BlueButton from '@/components/common/BlueButton';
+import Link from 'next/link';
 
 const data = [
     {
         id: '01',
-        question: 'What is the duration of this course?',
-        answer: 'The course duration can vary, but typically lasts between 6 to 12 weeks, depending on the program.',
+        question: 'What is Edubeacon?',
+        answer: 'Edubeacon is an online platform offering a wide range of courses designed to help learners upgrade their skills and advance their careers.',
     },
     {
         id: '02',
-        question: 'Is prior experience required to enroll in the course? ',
-        answer: 'No, prior experience is not required. The course is designed for individuals of all levels, from beginners to experienced professionals.',
+        question: 'What types of courses are offered on Edubeacon?',
+        answer: 'Edubeacon provides a range of learning options, including concise recorded courses, interactive live masterclasses, and engaging one-day workshops, across diverse fields such as business, technology, design, marketing, and more.',
     },
     {
         id: '03',
-        question: 'What is the format of the course?',
-        answer: 'The course can be delivered in a variety of formats, including in-person, online, and blended learning.',
+        question: 'Are the courses on Edubeacon self-paced or scheduled?',
+        answer: 'It depends on the course. We offer both on Edubeacon- Crash Courses that are self-paced, while the Live Masterclasses and Workshops have a fixed schedule with live sessions and assignments.',
     },
     {
         id: '04',
-        question: 'Are there any prerequisites for enrolling in the course?',
-        answer: 'No, there are no specific prerequisites for enrolling in the course. However, a basic understanding of mathematics and computing would be helpful.',
+        question: 'Can I take multiple courses at the same time on Edubeacon?',
+        answer: 'Yes, learners can enroll in multiple courses on Edubeacon and take them simultaneously.',
     },
     {
         id: '05',
-        question: 'Will I receive a certificate upon completion of the course?',
-        answer: 'Yes, you will receive a certificate of completion after successfully finishing the course and passing the required assessments.',
-    },
-];
+        question: 'What kind of skills can I learn on Edubeacon?',
+        answer: 'Edubeacon provides a plethora of relevant courses spanning various disciplines, from digital marketing and coding to project management and leadership, that can catalyse your career growth.',
+    }
+]
 
 const FAQ = () => {
     const [selected, setSelected] = React.useState<string | null>(null);
@@ -68,6 +70,9 @@ const FAQ = () => {
                     </button>
                 ))}
             </div>
+            <Link href={'/faq'} className={'z-10'}>
+                <BlueButton>Browse All FAQs</BlueButton>
+            </Link>
             <div
                 className={
                     'absolute w-[100vw] translate-y-40 mx-auto h-[900px] rounded-full bg-gradient-radial from-[#057CF2]/[30%] to-transparent blur-[250px]'

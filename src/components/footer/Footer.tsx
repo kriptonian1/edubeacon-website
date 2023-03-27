@@ -67,7 +67,7 @@ const policyLinks = [
     },
     {
         name: 'Privacy',
-        link: '#',
+        link: 'privacy-policy',
     },
     {
         name: 'License',
