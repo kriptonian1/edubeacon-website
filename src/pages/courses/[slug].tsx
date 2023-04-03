@@ -13,6 +13,8 @@ import { useRouter } from 'next/router';
 import dataScience from '../../../data/datascience';
 import dynamic from 'next/dynamic';
 import aioops from '../../../data/aioops';
+import pmm from '../../../data/pmm';
+import dmfb from '../../../data/dmfb'
 
 type Course = {
     hero: HeroProps;
@@ -21,54 +23,22 @@ type Course = {
     about: AboutProps;
 };
 
+const fetchCourseDetails = (slug: string | string[] | undefined): Course | null => {
+    let course: Course | null = null;
+    switch (slug) {
+        case 'data-science': course = dataScience; break;
+        case 'ai-ops': course = aioops; break;
+        case 'performance-marketing-mastery': course = pmm; break;
+        case 'digital-marketing-for-beginners': course = dmfb; break;
+    }
+    return course;
+}
+
 const CourseDetail = () => {
     const router = useRouter();
     const { slug } = router.query;
 
-    let course: Course = {
-        hero: {
-            title: '',
-            subtitle: '',
-            offeredBy: '',
-            courseImage: Course,
-            duration: {
-                total: '',
-                weekly: '',
-            },
-            type: {
-                title: '',
-                description: '',
-            },
-            cost: {
-                amount: '',
-                description: '',
-            },
-        },
-        syllabus: {
-            chapters: [],
-        },
-        instructor: {
-            name: '',
-            designation: '',
-            image: Guy,
-            about: '',
-        },
-        about: {
-            duration: '',
-            about: '',
-        },
-    };
-
-    if (slug === 'data-science') {
-        course = dataScience;
-    }
-    if (slug === 'ai-oops') {
-        course = aioops;
-    }
-
-    console.log(course);
-
-    console.log(course);
+    let course: Course | null = fetchCourseDetails(slug);
 
     return (
         <Page>

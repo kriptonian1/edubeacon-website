@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b7d47c2-ec80-4545-a2d1-cbe0d805db96" name="Changes" comment="feat: Make why edubeacon mobile responsive and fix navbar">
-      <change afterPath="$PROJECT_DIR$/src/pages/faq.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/privacy-policy.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_11_23,_7_47_PM_[Changes]/instructor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_11_23,_7_47_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_11_23__7_47_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_9_23,_7_29_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_9_23__7_29_PM__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/assets/dmfb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/assets/pmm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/dmfb.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/pmm.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/landing/FAQ.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/FAQ.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/aioops.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/aioops.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/assets/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/assets/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datascience.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/datascience.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/courses/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/courses/[slug].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -43,31 +42,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/raj/work-projects/freelance/edubeacon-website/src/components/courses/assets/Hero&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/opt/node-v16.17.0-linux-x64/lib/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MTCustomThemeConfigurable&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/raj/work-projects/freelance/edubeacon-website/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/raj/work-projects/freelance/edubeacon-website/data/assets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/opt/node-v16.17.0-linux-x64/lib/node_modules/prettier",
+    "settings.editor.selected.configurable": "MTCustomThemeConfigurable",
+    "ts.external.directory.path": "/snap/webstorm/311/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/assets" />
       <recent name="$PROJECT_DIR$/src/components/courses/assets/Hero" />
       <recent name="$PROJECT_DIR$/src/components/courses/assets/Instructor" />
       <recent name="$PROJECT_DIR$/src/components/navbar/assets" />
       <recent name="$PROJECT_DIR$/src/components/why-edubeacon/assets/Perks" />
-      <recent name="$PROJECT_DIR$/src/components/why-edubeacon/assets/SkillDevelopment" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/footer" />
@@ -106,6 +105,7 @@
       <workItem from="1678628280382" duration="2290000" />
       <workItem from="1679921708417" duration="516000" />
       <workItem from="1679926174886" duration="2951000" />
+      <workItem from="1680358722329" duration="2362000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Add all sections">
       <created>1677947901832</created>

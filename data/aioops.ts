@@ -5,16 +5,16 @@ const aioops:Course =
     {
         hero: {
             title: 'AI OPS',
-            subtitle: 'Learn about the fundamentals of artificial intelligence and object-oriented programming from best tech industrialist.',
+            subtitle: 'Join the AI Ops revolution and gain practical skills from experienced data scientists to unlock endless career opportunities.',
             offeredBy: 'This course is offered by GetSmarter, an EduBeacon partner',
             courseImage: AioopsMain,
             duration: {
-                total: '6 weeks',
+                total: '16 weeks',
                 weekly: '5–8 hours per week',
             },
             type: {
-                title: 'Self-paced',
-                description: 'Progress at your own speed',
+                title: '1on1 Live Mentorship sessions',
+                description: 'Study your way, Study from anywhere, at any time',
             },
             cost: {
                 amount: 'Free',
@@ -22,26 +22,30 @@ const aioops:Course =
             },
         },
         about: {
-            duration: '6 weeks',
+            duration: '16 weeks',
             about:
-                'AI stands for artificial intelligence, which is the simulation of human intelligence processes by machines, especially computer systems. OOPs stands for object-oriented programming, which is a programming paradigm that uses objects, which are instances of classes, to represent and manipulate data.\n' +
+                '• Discover the exciting world of AI Ops' +
                 '\n' +
-                'The course is typically designed for students or professionals who want to build a career in the field of AI or software development. The course can be offered in various formats, such as online, in-person, or a combination of both. The duration of the course can vary depending on the depth and complexity of the topics covered.\n' +
+                '• Learn from experienced data scientists who work in the field' +
                 '\n' +
-                'By completing an AI and OOPs course, you will gain a comprehensive understanding of the fundamentals of AI and OOPs, and learn how to apply them to real-world problems. This knowledge can help you build a strong foundation for a successful career in various industries, including technology, healthcare, finance, and more.\n' +
+                '• Get hands-on experience with advanced tools and techniques used to solve complex problems' +
                 '\n' +
-                'Upon completion of the course, students should be able to apply their skills and knowledge to solve real-world problems in a variety of fields, including business, healthcare, finance, and science. They may also be well-positioned for careers in AI Oops, data analytics, or related fields.',
+                '• Gain valuable insights into this rapidly growing field' +
+                '\n' +
+                '• Unlock your potential and discover exciting career opportunities in AI Ops.',
         },
         syllabus: {
             chapters: [
-                'Introduction to AI and its various applications',
-                'Basic concepts of OOPs like classes, objects, inheritance, and polymorphism',
-                'Data structures and algorithms used in AI',
-                'Machine learning concepts and techniques',
-                'Neural networks and deep learning',
-                'Natural language processing',
-                'Image processing and computer vision',
-                'Ethics and social implications of AI',
+                'Linux Foundation',
+                'GIT Foundation',
+                'Data Version Control',
+                'ML Flow',
+                'Kubernetes Flow',
+                'TFX',
+                'Kubeflow',
+                'GitLab Foundation',
+                'Digital Ocean',
+                'AWS MLOps'
             ],
         },
         instructor: {

@@ -5,7 +5,7 @@ const dataScience:Course =
     {
         hero: {
             title: 'Data Science',
-            subtitle: 'Learn about the world of data science first-hand from real data scientists.',
+            subtitle: 'Learn about the world of data science firsthand from real data scientists.',
             offeredBy: 'This course is offered by GetSmarter, an EduBeacon partner',
             courseImage: DatascienceMain,
             duration: {
@@ -13,8 +13,8 @@ const dataScience:Course =
                 weekly: '5–8 hours per week',
             },
             type: {
-                title: 'Self-paced',
-                description: 'Progress at your own speed',
+                title: '1on1 Live Mentorship sessions',
+                description: 'Study your way, Study from anywhere, at any time',
             },
             cost: {
                 amount: 'Free',
@@ -24,25 +24,21 @@ const dataScience:Course =
         about: {
             duration: '6 weeks',
             about:
-                'Data Science is an interdisciplinary field that involves the use of statistical and computational methods to extract insights and knowledge from large and complex data sets. A Data Science course is designed to equip students with the knowledge and skills required to work with data and derive meaningful insights from it.\n' +
-                '\n' +
-                'The course typically covers a range of topics including data collection, data cleaning, data exploration, statistical inference, machine learning, data visualization, and data communication. Students learn how to use tools and techniques such as Python, R, SQL, and Tableau to manipulate and analyze data, build predictive models, and create visualizations to communicate their findings.\n' +
-                'Data Science courses are often designed for individuals with a strong background in mathematics, statistics, computer science, or a related field. However, some courses are also designed to cater to students with little to no prior experience in these areas.\n' +
-                '\n' +
-                'The course may be offered in different formats such as traditional classroom-based learning, online learning, or a combination of both. Some courses may also offer opportunities for students to work on real-world projects, participate in competitions, or collaborate with industry partners.\n' +
-                '\n' +
-                'Upon completion of the course, students should be able to apply their skills and knowledge to solve real-world problems in a variety of fields, including business, healthcare, finance, and science. They may also be well-positioned for careers in data science, data analytics, business intelligence, or related fields.',
+                'Data Science is a rapidly growing field that leverages statistical and computational methods to extract insights and knowledge from big data sets. A comprehensive Data Science course is designed to equip students with the knowledge and skills required to work with data and derive meaningful insights from it, while also preparing them for exciting career opportunities in fields such as AI and machine learning.' +
+                '\n\n'+
+                'This hands-on course covers essential topics such as data collection, data cleaning, statistical inference, machine learning, data visualization, and communication, using popular tools such as Python, R, SQL, and Tableau. Students have opportunities to work on real-world projects, participate in competitions, and collaborate with industry partners to gain practical experience.' +
+                '\n\n' +
+                'Whether you have a strong background in mathematics, statistics, computer science, or a related field, or little to no prior experience, this course is tailored to your needs. You\'ll learn how to analyze and manipulate complex data sets, build predictive models, and create engaging visualizations to communicate your findings.' +
+                '\n\n' +
+                'Upon completion of the course, you\'ll be well-prepared to solve real-world problems in diverse fields, including business, healthcare, finance, and science, and be in a prime position to embark on a rewarding career in data science, data analytics, or business intelligence. Don\'t miss out on this opportunity to gain a competitive edge in the dynamic field of Data Science!',
         },
         syllabus: {
             chapters: [
-                'Linear Regression',
-                'Multiple and Polynomial Regression',
-                'Model Selection and Cross-Validation',
-                'Bias, Variance, and Hyperparameters',
-                'Classification and Logistic Regression',
-                'Multi-logstic Regression and Missingness',
-                'Bootstrap, Confidence Intervals, and Hypothesis Testing',
-                'Capstone Project',
+                'Python',
+                'Data Science with Python',
+                'Tableau',
+                'Machine Learning',
+                'Data science Capstone'
             ],
         },
         instructor: {
