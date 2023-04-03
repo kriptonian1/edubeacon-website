@@ -5,7 +5,7 @@ import Footer from '@/components/footer/Footer';
 import Navbar from '@/components/navbar/Navbar';
 import React from 'react';
 import Head from 'next/head';
-import { AioopsMain, DatascienceMain } from '../../../data/assets';
+import { AioopsMain, DatascienceMain, PMM, DMFB } from '../../../data/assets';
 
 const courses = [
     {
@@ -20,6 +20,20 @@ const courses = [
         name: 'AI Ops',
         slug: 'ai-ops',
         image: AioopsMain,
+        instructor: "Rajesh Thakur"
+    },
+    {
+        id: 3,
+        name: 'Digital Marketing for Beginners',
+        slug: 'digital-marketing-for-beginners',
+        image: DMFB,
+        instructor: "Rajesh Thakur"
+    },
+    {
+        id: 4,
+        name: 'Performance Marketing Mastery',
+        slug: 'performance-marketing-mastery',
+        image: PMM,
         instructor: "Rajesh Thakur"
     },
 ];

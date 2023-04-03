@@ -51,7 +51,9 @@ const Hero = () => {
                     Learn practical skills to transform your career, anytime and anywhere with Edubeacon.
                 </div>
                 <div className={'flex md:flex-row flex-col gap-5 mt-5 items-center'}>
-                    <BlueButton className={'w-[180px] order-1'}>Live Courses</BlueButton>
+                    <Link href={'/courses'}>
+                        <BlueButton className={'w-[180px] order-1'}>Live Courses</BlueButton>
+                    </Link>
                     <div className="order-3 md:order-2 md:mt-[60px]">
                         <Line />
                     </div>
