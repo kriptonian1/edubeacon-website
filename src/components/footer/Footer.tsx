@@ -2,6 +2,7 @@ import React from 'react';
 import BlueButton from '@/components/common/BlueButton';
 import WhiteButton from '@/components/common/WhiteButton';
 import { FacebookIcon, InstagramIcon, LinkedinLogo, LogoColored, TwitterIcon, YoutubeLogo } from './assets';
+import Link from 'next/link';
 
 const socials = [
     {
@@ -118,8 +119,10 @@ const Footer = () => {
                     ))}
                 </div>
             </div>
-            <div className={'hidden md:flex flex-col gap-y-5 order-3'}>
-                <BlueButton>Browse Courses</BlueButton>
+            <div className={'hidden lg:flex flex-col gap-y-5 order-3'}>
+                <Link href={'/courses'}>
+                    <BlueButton>Browse Courses</BlueButton>
+                </Link>
                 <WhiteButton>Contact Us</WhiteButton>
                 <div className={'text-white font-medium'}>© Edubeacon, 2022.</div>
             </div>

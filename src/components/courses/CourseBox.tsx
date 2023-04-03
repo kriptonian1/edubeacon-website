@@ -16,8 +16,8 @@ interface CourseBoxProps {
 
 const CourseBox = ({ data }: CourseBoxProps) => {
     return (
-        <div className=" bg-white/20 md:w-[20rem] pb-5  rounded-2xl">
-            <Image className="rounded-t-2xl w-full h-auto" width="0" height="0" src={data.image} alt="course name" />
+        <div className=" bg-white/20 md:w-[20rem] pb-5  rounded-2xl h-full">
+            <Image priority={true} className="rounded-t-2xl w-full h-auto" width="0" height="0" src={data.image} alt="course name" />
 
             <div className="m-4">
                 <div className="font-bold text-xl pb-4 text-white">{data.name}</div>

@@ -6,6 +6,7 @@ import Navbar from '@/components/navbar/Navbar';
 import React from 'react';
 import Head from 'next/head';
 import BlueButton from '@/components/common/BlueButton';
+import Link from 'next/link';
 
 const ComingSoon = () => {
     return (
@@ -24,9 +25,9 @@ const ComingSoon = () => {
             <div className="flex flex-col gap-y-[5rem] justify-center items-center mt-[20vh] mb-[10vh] gap-x-[15vw] z-20">
                 <h2 className=" text-4xl md:text-9xl text-white text-center">COMING SOON</h2>
 
-                <div className="justify-center">
+                <Link href={'/courses'} className="justify-center">
                     <BlueButton>Browse Courses</BlueButton>
-                </div>
+                </Link>
             </div>
 
             <div className="hidden md:flex">

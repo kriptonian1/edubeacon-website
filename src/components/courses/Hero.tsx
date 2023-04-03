@@ -58,6 +58,7 @@ const Hero: React.FC<{ data: HeroProps }> = props => {
                 </div>
 
                 <Image
+                    priority={true}
                     className={'w-fit lg:block hidden md:flex'}
                     src={props.data.courseImage}
                     width={500}
