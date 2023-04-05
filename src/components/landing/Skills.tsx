@@ -2,7 +2,7 @@ import React from 'react';
 
 const details = [
     {
-        header: '100+',
+        header: '50+',
         body: 'Successfully Placed',
     },
     {
@@ -22,10 +22,9 @@ const Skills = () => {
                 The Skills You Need For The Career You Want
             </h1>
             <h3 className={'w-[85vw] md:w-[60vw] font-medium text-lg relative z-10'}>
-                Acquire the skills you need to succeed in today’s job market. Edubeacon is an online learning platform
-                that helps students gain practical, real-world experience with digital marketing and data science. We
-                offer courses and certifications that are designed to help professionals advance their careers in just a
-                few hours per week.
+                Acquire the skills you need to succeed in today’s job market. EduBeacon is an online learning platform that helps students and professionals gain practical,
+                real-world experience with digital marketing and data science. We offer courses and certifications that are designed to help professionals advance their careers
+                in just a few hours per week.
             </h3>
             <div
                 className={

@@ -6,10 +6,28 @@
   <component name="ChangeListManager">
     <list default="true" id="6b7d47c2-ec80-4545-a2d1-cbe0d805db96" name="Changes" comment="feat: Update thumbnails, add card of 2 courses">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/courses/CourseBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/courses/CourseBox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/AIOps.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/DATASCIENCE.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/aioops.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/aioops.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datascience.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/datascience.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/dmfb.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/dmfb.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contact/ContactDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/ContactDetails.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/courses/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/courses/Hero.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/landing/FAQ.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/FAQ.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/landing/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/landing/Skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/Skills.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/landing/Upskill.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/Upskill.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/landing/WhyChoose.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/WhyChoose.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/why-edubeacon/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/why-edubeacon/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/why-edubeacon/Perks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/why-edubeacon/Perks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/404.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/404.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/coming-soon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/coming-soon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/courses/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/courses/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/faq.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/faq.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/why-edubeacon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/why-edubeacon.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +44,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="5cf0d836-d397-4c07-b320-691c5ea08620" />
+        <option name="url" value="git@github.com:kriptonian1/edubeacon-website.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -44,14 +75,15 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/raj/work-projects/freelance/edubeacon-website/data/assets&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/raj/work-projects/freelance/edubeacon-website&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/opt/node-v16.17.0-linux-x64/lib/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MTCustomThemeConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/home/raj/work-projects/freelance/edubeacon-website/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -104,6 +136,9 @@
       <workItem from="1680358722329" duration="2385000" />
       <workItem from="1680526320764" duration="557000" />
       <workItem from="1680528042589" duration="967000" />
+      <workItem from="1680667158821" duration="750000" />
+      <workItem from="1680669045218" duration="4000" />
+      <workItem from="1680670044964" duration="1932000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Add all sections">
       <created>1677947901832</created>
@@ -152,6 +187,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: Add all sections" />

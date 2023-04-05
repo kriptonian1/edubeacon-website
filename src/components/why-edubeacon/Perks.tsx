@@ -4,20 +4,20 @@ import Image from 'next/image';
 
 const perks = [
     {
-        title: 'Job oriented program',
-        body: 'The programs are designed to prepare individuals for specific careers or skill set. These programs typically focus on providing candidates with the knowledge, skills, and experience they need to succeed in their chosen field. They may include hands-on training, and other experiential learning opportunities, as well as coursework that is directly relevant to the field. The main objective is to provide the candidates with a career path, instead of just a degree.',
+        title: 'Your Partner for skill development',
+        body: 'Choose our institute to enhance your skills and reach your career goals.',
     },
     {
-        title: 'Assistance with placement',
-        body: 'It is offered to help candidates find employment after course completion. It includes a variety of services such as job interviews, career counseling, resume and cover letter writing, and job search strategies. We also have dedicated placement officer or career service department that work with candidates to identify job opportunities and connect them with employers.',
+        title: 'Placement Assistance',
+        body: 'Have placed more than 50+ students',
     },
     {
-        title: 'Practical project oriented classes',
-        body: 'We have designed the program in a way to provide candidates with hands-on experience and real-world problem-solving skills. These classes involve working on projects or case studies that are directly related to the industry or field candidates want to specialize in. This approach allows candidates to apply the knowledge and skills they have learned in the classroom to real-world situations, giving them a better understanding of the practical applications of their education.',
+        title: 'Experienced Mentor',
+        body: 'Mentor having 10+ years of experience',
     },
     {
         title: 'Customized Syllabus',
-        body: "he course plan is tailored to the specific needs and goals of the prevailing market practices. It includes specific set of topics, readings, assignments, and assessments that are chosen to align with the candidates' interests and career aspirations. Since we offer customized syllabus it can be made flexible, allowing the instructor to adjust the content or delivery based on the candidates' needs or feedback.",
+        body: "The course plan is tailored to the specific needs and goals of the prevailing market practices.",
     },
 ];
 

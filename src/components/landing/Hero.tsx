@@ -45,10 +45,10 @@ const Hero = () => {
                     Unlock your <span className={'text-navyBlue'}>Potential</span>
                 </div>
                 <span className={'text-xl md:text-2xl lg:text-3xl'}>
-                    with <span className={'text-lightBlue'}>Edubeacon</span>
+                    with <span className={'text-lightBlue'}>EduBeacon</span>
                 </span>
                 <div className={'font-medium text-lg'}>
-                    Learn practical skills to transform your career, anytime and anywhere with Edubeacon.
+                    Learn practical skills to transform your career, anytime and anywhere with EduBeacon.
                 </div>
                 <div className={'flex md:flex-row flex-col gap-5 mt-5 items-center'}>
                     <Link href={'/courses'}>

@@ -6,7 +6,7 @@ const aioops:Course =
         hero: {
             title: 'AI OPS',
             subtitle: 'Join the AI Ops revolution and gain practical skills from experienced data scientists to unlock endless career opportunities.',
-            offeredBy: 'This course is offered by GetSmarter, an EduBeacon partner',
+            offeredBy: 'EduBeacon',
             courseImage: AioopsMain,
             duration: {
                 total: '16 weeks',

@@ -1,6 +1,4 @@
 import Page from '@/components/common/Page';
-import ContactBox from '@/components/contact/ContactBox';
-import ContactDetails from '@/components/contact/ContactDetails';
 import Footer from '@/components/footer/Footer';
 import Navbar from '@/components/navbar/Navbar';
 import React from 'react';
@@ -11,7 +9,7 @@ const PageNotFound = () => {
     return (
         <Page>
             <Head>
-                <title>Comming Soon | Edubeacon</title>
+                <title>Coming Soon | EduBeacon</title>
             </Head>
             <div className={'w-[100vw] absolute '}>
                 <div

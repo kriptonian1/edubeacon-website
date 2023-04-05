@@ -6,7 +6,7 @@ const dmfb:Course =
         hero: {
             title: 'Digital Marketing for Beginners',
             subtitle: 'Learn how to create successful digital marketing campaigns, improve your LinkedIn presence, and generate leads for your business.',
-            offeredBy: 'This course is offered by GetSmarter, an EduBeacon partner',
+            offeredBy: 'EduBeacon',
             courseImage: DMFB,
             duration: {
                 total: '6 weeks',

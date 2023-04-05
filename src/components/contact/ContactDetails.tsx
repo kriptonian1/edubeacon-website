@@ -11,13 +11,13 @@ const ContactDetails = () => {
                     <br />
                     Robby Arcade,
                     <br />
-                    indranagar Bengaluru
+                    Indranagar, Bengaluru
                 </span>
             </div>
             <div className="flex items-center">
                 <PhoneIcon />
                 <a href="tel:+918004564781">
-                    <span className="ml-7">+91 8004564781</span>
+                    <span className="ml-7">+91 9945488674</span>
                 </a>
             </div>
             <div className="flex items-center">

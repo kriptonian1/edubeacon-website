@@ -46,7 +46,7 @@ const WhyChoose = () => {
     return (
         <div className={'text-white flex flex-col gap-y-16 items-center px-5'}>
             <div className={'text-2xl text-center'}>
-                Why choose <span className={'font-bold'}>Edubeacon</span>
+                Why choose <span className={'font-bold'}>EduBeacon</span>
             </div>
             <div className={'hidden md:flex gap-4 w-screen flex-wrap break-all items-center justify-center'}>
                 <Swiper

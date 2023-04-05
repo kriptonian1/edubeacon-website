@@ -11,7 +11,7 @@ const WhyEdubeacon = () => {
     return (
         <Page>
             <Head>
-                <title>Why-edubeacon | Edubeacon</title>
+                <title>Why EduBeacon | EduBeacon</title>
             </Head>
             <Navbar />
             <Hero />

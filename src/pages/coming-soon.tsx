@@ -1,6 +1,4 @@
 import Page from '@/components/common/Page';
-import ContactBox from '@/components/contact/ContactBox';
-import ContactDetails from '@/components/contact/ContactDetails';
 import Footer from '@/components/footer/Footer';
 import Navbar from '@/components/navbar/Navbar';
 import React from 'react';
@@ -12,7 +10,7 @@ const ComingSoon = () => {
     return (
         <Page>
             <Head>
-                <title>Comming Soon | Edubeacon</title>
+                <title>Coming Soon | EduBeacon</title>
             </Head>
             <div className={'w-[100vw] absolute '}>
                 <div
@@ -29,18 +27,7 @@ const ComingSoon = () => {
                     <BlueButton>Browse Courses</BlueButton>
                 </Link>
             </div>
-
-            <div className="hidden md:flex">
-                <div className="absolute bottom-0 w-screen">
-                    <Footer />
-                </div>
-            </div>
-
-            <div className="flex md:hidden">
-                <div className="w-screen">
-                    <Footer />
-                </div>
-            </div>
+            <Footer />
         </Page>
     );
 };

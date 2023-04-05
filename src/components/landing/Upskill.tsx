@@ -5,7 +5,7 @@ import { asset1, asset2, asset3 } from './assets/Upskill';
 const data = [
     {
         id: 1,
-        title: 'Unlock Your Potential With Edubeacon',
+        title: 'Unlock Your Potential With EduBeacon',
         body: "Whether you're looking to learn new skills or upgrade your existing ones, we've got you covered. ",
         buttonText: 'Sign up today',
         image: asset1,

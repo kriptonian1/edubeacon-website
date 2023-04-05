@@ -10,7 +10,7 @@ const Contact = () => {
     return (
         <Page>
             <Head>
-                <title>Contact | Edubeacon</title>
+                <title>Contact | EduBeacon</title>
             </Head>
             <div className={'w-[100vw] absolute '}>
                 <div

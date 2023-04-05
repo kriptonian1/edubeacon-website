@@ -4,14 +4,12 @@ import Hero, { HeroProps } from '@/components/courses/Hero';
 import Instructor, { InstructorProps } from '@/components/courses/Instructor';
 import Syllabus, { SyllabusProps } from '@/components/courses/Syllabus';
 import { Course } from '@/components/courses/assets/Hero';
-import { Guy } from '@/components/courses/assets/Instructor';
-import React, { useCallback, useEffect, useState } from 'react';
+import React from 'react';
 import Head from 'next/head';
 import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/footer/Footer';
 import { useRouter } from 'next/router';
 import dataScience from '../../../data/datascience';
-import dynamic from 'next/dynamic';
 import aioops from '../../../data/aioops';
 import pmm from '../../../data/pmm';
 import dmfb from '../../../data/dmfb'

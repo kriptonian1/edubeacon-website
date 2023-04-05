@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BlueButton from '@/components/common/BlueButton';
 import { Duration } from '@/components/courses/assets/Hero';
 import Image from 'next/image';
-import { Course } from './assets/Hero';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
 
 export type HeroProps = {
     title: string;
@@ -26,15 +23,6 @@ export type HeroProps = {
 };
 
 const Hero: React.FC<{ data: HeroProps }> = props => {
-    const [pdfLink, setPdfLink] = useState('');
-
-    const handlePDF = () => {
-        if (props.data.title === 'AI Ops') {
-            setPdfLink('https://drive.google.com/file/d/1SXsag8BUSKiGOHnOIcGz_6E7YJv2r62b/view?usp=sharing');
-        } else if (props.data.title === 'Data Science') {
-            setPdfLink('https://drive.google.com/file/d/1IVHuXz7u6S4pV5W3BrssVWIcEOGwCy9C/view?usp=sharing');
-        }
-    };
     return (
         <div className={'mt-[150px] flex flex-col gap-y-10 text-white justify-center z-10'}>
             <div className={'lg:w-[80vw] mx-auto flex items-center justify-between gap-x-10 px-5'}>
@@ -51,7 +39,7 @@ const Hero: React.FC<{ data: HeroProps }> = props => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <BlueButton onClick={() => handlePDF()} className={'w-fit'}>
+                        <BlueButton className={'w-fit'}>
                             Request more info
                         </BlueButton>
                     </a>

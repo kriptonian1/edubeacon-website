@@ -6,28 +6,28 @@ import Link from 'next/link';
 const data = [
     {
         id: '01',
-        question: 'What is Edubeacon?',
-        answer: 'Edubeacon is an online platform offering a wide range of courses designed to help learners upgrade their skills and advance their careers.',
+        question: 'What is EduBeacon?',
+        answer: 'EduBeacon is an online platform offering a wide range of courses designed to help learners upgrade their skills and advance their careers.',
     },
     {
         id: '02',
-        question: 'What types of courses are offered on Edubeacon?',
-        answer: 'Edubeacon provides a range of learning options, including concise recorded courses, interactive live masterclasses, and engaging one-day workshops, across diverse fields such as business, technology, design, marketing, and more.',
+        question: 'What types of courses are offered on EduBeacon?',
+        answer: 'EduBeacon provides a range of learning options, including concise recorded courses, interactive live masterclasses, and engaging one-day workshops, across diverse fields such as business, technology, design, marketing, and more.',
     },
     {
         id: '03',
-        question: 'Are the courses on Edubeacon self-paced or scheduled?',
-        answer: 'It depends on the course. We offer both on Edubeacon- Crash Courses that are self-paced, while the Live Masterclasses and Workshops have a fixed schedule with live sessions and assignments.',
+        question: 'Are the courses on EduBeacon self-paced or scheduled?',
+        answer: 'It depends on the course. We offer both on EduBeacon - Crash Courses that are self-paced, while the Live Masterclasses and Workshops have a fixed schedule with live sessions and assignments.',
     },
     {
         id: '04',
-        question: 'Can I take multiple courses at the same time on Edubeacon?',
-        answer: 'Yes, learners can enroll in multiple courses on Edubeacon and take them simultaneously.',
+        question: 'Can I take multiple courses at the same time on EduBeacon?',
+        answer: 'Yes, learners can enroll in multiple courses on EduBeacon and take them simultaneously.',
     },
     {
         id: '05',
-        question: 'What kind of skills can I learn on Edubeacon?',
-        answer: 'Edubeacon provides a plethora of relevant courses spanning various disciplines, from digital marketing and coding to project management and leadership, that can catalyse your career growth.',
+        question: 'What kind of skills can I learn on EduBeacon?',
+        answer: 'EduBeacon provides a plethora of relevant courses spanning various disciplines, from digital marketing and coding to project management and leadership, that can catalyse your career growth.',
     }
 ]
 

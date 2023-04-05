@@ -6,7 +6,7 @@ const dataScience:Course =
         hero: {
             title: 'Data Science',
             subtitle: 'Learn about the world of data science firsthand from real data scientists.',
-            offeredBy: 'This course is offered by GetSmarter, an EduBeacon partner',
+            offeredBy: 'EduBeacon',
             courseImage: DatascienceMain,
             duration: {
                 total: '6 weeks',

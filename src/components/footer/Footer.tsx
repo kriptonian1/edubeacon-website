@@ -124,7 +124,7 @@ const Footer = () => {
                     <BlueButton>Browse Courses</BlueButton>
                 </Link>
                 <WhiteButton>Contact Us</WhiteButton>
-                <div className={'text-white font-medium'}>© Edubeacon, 2022.</div>
+                <div className={'text-white font-medium'}>© EduBeacon, 2022.</div>
             </div>
         </div>
     );
