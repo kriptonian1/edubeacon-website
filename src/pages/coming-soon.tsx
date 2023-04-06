@@ -23,8 +23,8 @@ const ComingSoon = () => {
             <div className="flex flex-col gap-y-[5rem] justify-center items-center mt-[20vh] mb-[10vh] gap-x-[15vw] z-20">
                 <h2 className=" text-4xl md:text-9xl text-white text-center">COMING SOON</h2>
 
-                <Link href={'/courses'} className="justify-center">
-                    <BlueButton>Browse Courses</BlueButton>
+                <Link href={'/'} className="justify-center">
+                    <BlueButton>Return Home</BlueButton>
                 </Link>
             </div>
             <Footer />

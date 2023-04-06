@@ -30,7 +30,7 @@ const CourseBox = ({ data }: CourseBoxProps) => {
                 <div className="font-bold text-xl pb-4 text-white">{data.name}</div>
 
                 <div>
-                    <div className="text-white">by {data.instructor}</div>
+                    {/* <div className="text-white">by {data.instructor}</div> */}
                     <div className="flex justify-center mt-5">
                         <Link href={`/courses/${data.slug}`}>
                             <BlueButton className="!rounded-full">Browse Courses</BlueButton>

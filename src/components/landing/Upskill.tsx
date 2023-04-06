@@ -20,7 +20,7 @@ const data = [
     },
     {
         id: 3,
-        title: "Get the skills you need to thrive in today's fast-paced world.",
+        title: "Get the skills you need to thrive in today's world.",
         body: "We believe that everyone has the potential to succeed. That's why we offer a range of courses, designed to help you stay relevant and competitive in your field.",
         buttonText: 'Own your career',
         image: asset3,
