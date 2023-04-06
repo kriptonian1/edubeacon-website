@@ -7,16 +7,12 @@ const ContactDetails = () => {
             <div className="flex items-center">
                 <AddressIcon />
                 <span className="ml-7">
-                    No. 537, 1st floor
-                    <br />
-                    Robby Arcade,
-                    <br />
                     Indranagar, Bengaluru
                 </span>
             </div>
             <div className="flex items-center">
                 <PhoneIcon />
-                <a href="tel:+918004564781">
+                <a href="tel:+919945488674">
                     <span className="ml-7">+91 9945488674</span>
                 </a>
             </div>

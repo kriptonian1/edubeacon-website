@@ -12,7 +12,7 @@ import { useRouter } from 'next/router';
 import dataScience from '../../../data/datascience';
 import aioops from '../../../data/aioops';
 import pmm from '../../../data/pmm';
-import dmfb from '../../../data/dmfb'
+import dmfb from '../../../data/dmfb';
 
 type Course = {
     hero: HeroProps;
@@ -24,13 +24,21 @@ type Course = {
 const fetchCourseDetails = (slug: string | string[] | undefined): Course | null => {
     let course: Course | null = null;
     switch (slug) {
-        case 'data-science': course = dataScience; break;
-        case 'ai-ops': course = aioops; break;
-        case 'performance-marketing-mastery': course = pmm; break;
-        case 'digital-marketing-for-beginners': course = dmfb; break;
+        case 'data-science':
+            course = dataScience;
+            break;
+        case 'ai-ops':
+            course = aioops;
+            break;
+        case 'performance-marketing-mastery':
+            course = pmm;
+            break;
+        case 'digital-marketing-for-beginners':
+            course = dmfb;
+            break;
     }
     return course;
-}
+};
 
 const CourseDetail = () => {
     const router = useRouter();
@@ -41,7 +49,7 @@ const CourseDetail = () => {
     return (
         <Page>
             <Head>
-                <title>Course-detail | Edubeacon</title>
+                <title>{course?.hero.title} | Edubeacon</title>
             </Head>
             <Navbar />
             {course && (
@@ -49,7 +57,7 @@ const CourseDetail = () => {
                     <Hero data={course.hero} />
                     <About data={course.about} />
                     <Syllabus data={course.syllabus} />
-                    <Instructor data={course.instructor} />
+                    {/* <Instructor data={course.instructor} /> */}
                 </>
             )}
 

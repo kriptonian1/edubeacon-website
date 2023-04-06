@@ -68,7 +68,7 @@ const Courses = () => {
                         <ComaDown />
                     </div>
                 </div>
-                <div className="ml-[7vw] mr-[7vw] justify-items-center relative z-[10rem] inline-grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-2 ">
+                <div className="ml-[7vw] mr-[7vw] justify-items-center relative z-[10rem] inline-grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-[5vw] ">
                     {courses.map((item, index) => {
                         return (
                             <div key={index}>

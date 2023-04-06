@@ -15,7 +15,7 @@ const links = [
         path: '/courses',
     },
     {
-        name: 'Why EduBeacon?',
+        name: 'Why EduBeacon',
         path: '/why-edubeacon',
     },
     {
@@ -51,7 +51,7 @@ const Navbar = () => {
             } fixed z-30 w-screen top-0 px-5 md:px-10 text-white transition-all ease-out duration-300`}
         >
             {/*Medium to large screens*/}
-            <div className={'justify-between items-center hidden md:flex'}>
+            <div className={'justify-between items-center hidden lg:flex'}>
                 <Link href={'/'} as={'image'}>
                     <Image src={EdubeaconLogo} draggable={false} priority height={80} alt={'logo'} />
                 </Link>
@@ -79,7 +79,7 @@ const Navbar = () => {
             </div>
 
             {/*Small screens*/}
-            <div className={'justify-between items-center flex-col md:hidden flex py-5'}>
+            <div className={'justify-between items-center flex-col lg:hidden flex py-5'}>
                 <div className={'flex justify-between items-center w-full'}>
                     <Link href={'/'}>
                         <Image src={EdubeaconLogo} height={80} alt={'logo'} />

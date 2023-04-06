@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { asset1, asset2, asset3 } from './assets/Upskill';
+import Link from 'next/link';
 
 const data = [
     {
@@ -32,12 +33,12 @@ const Upskill = () => {
             <div className={'text-2xl text-center'}>
                 Upskill Yourself And <span className={'font-bold'}>Get Placed</span>
             </div>
-            <div className={'flex flex-col md:flex-row gap-y-10  md:gap-x-10 items-center justify-center'}>
+            <div className={'flex flex-col lg:flex-row gap-y-10  md:gap-x-10 items-center justify-center'}>
                 {data.map(item => (
                     <div
                         key={item.id}
                         className={
-                            'flex flex-col relative justify-between gap-y-8 aspect-square w-[90vw] md:w-[23vw] bg-[#2693FF]/[60%] rounded-2xl h-[450px] hover:shadow-2xl hover:shadow-sky-700/40 transition-all ease-out duration-300'
+                            'flex flex-col relative justify-between gap-y-8 aspect-square w-[90vw] lg:w-[23vw]  bg-[#2693FF]/[60%] rounded-2xl h-[450px] hover:shadow-2xl hover:shadow-sky-700/40 transition-all ease-out duration-300'
                         }
                     >
                         <div className={'flex gap-x-5 px-8 pt-8 items-start'}>
@@ -45,13 +46,15 @@ const Upskill = () => {
                             <div className="aspect-square bg-white/[40%] w-10 h-10 items-center justify-center flex p-4 rounded-md text-xl">
                                 {item.id}
                             </div>
-                            <div className={'text-lg'}>{item.title}</div>
+                            <div className={'text-lg '}>{item.title}</div>
                         </div>
                         <div className={' px-8'}>{item.body}</div>
                         <div className={'flex justify-between mb-14 items-start'}>
-                            <button className={'bg-white text-blue-500 rounded-full ml-8 py-2 px-4'}>
-                                {item.buttonText}
-                            </button>
+                            <Link href={'/contact'}>
+                                <button className={'bg-white text-blue-500 rounded-full ml-8 py-2 px-4'}>
+                                    {item.buttonText}
+                                </button>
+                            </Link>
                         </div>
                         <Image
                             className="absolute right-0 bottom-0 "

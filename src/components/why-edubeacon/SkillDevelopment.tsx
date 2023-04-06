@@ -24,7 +24,7 @@ const SkillDevelopment = () => {
                         <Achievement />
                         <div className={'flex flex-col gap-y-3'}>
                             <div className={'font-bold text-xl'}>Placement Assistance</div>
-                            <div className={'text-[#C8C8DC]'}>Have placed more than 100+ students</div>
+                            <div className={'text-[#C8C8DC]'}>Have placed more than 50+ students</div>
                         </div>
                     </div>
                     <Image src={line} alt={''} />
@@ -32,7 +32,7 @@ const SkillDevelopment = () => {
                         <Chalkboard />
                         <div className={'flex flex-col gap-y-3'}>
                             <div className={'font-bold text-xl'}>Experienced Mentor</div>
-                            <div className={'text-[#C8C8DC]'}>Mentors having 15+ years of experience</div>
+                            <div className={'text-[#C8C8DC]'}>Mentor having 10+ years of experience</div>
                         </div>
                     </div>
                 </div>

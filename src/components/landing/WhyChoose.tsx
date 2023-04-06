@@ -83,7 +83,7 @@ const WhyChoose = () => {
                     spaceBetween={100}
                     slidesPerView={1}
                     autoplay={{
-                        delay: 1000,
+                        delay: 4000,
                         disableOnInteraction: false,
                     }}
                     modules={[Autoplay]}

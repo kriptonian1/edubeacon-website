@@ -79,7 +79,7 @@ const policyLinks = [
 const Footer = () => {
     return (
         <div className={'bg-[#252525] p-20 flex flex-col md:flex-row items-center justify-between z-10'}>
-            <div className={'flex flex-col gap-y-8 justify-between md:order-1 order-2'}>
+            <div className={'flex flex-col gap-y-8 justify-between lg:order-1 order-2'}>
                 <LogoColored />
                 <div className={'flex justify-between md:gap-x-3'}>
                     {socials.map((s, index) => (
@@ -91,7 +91,7 @@ const Footer = () => {
             </div>
             <div
                 className={
-                    'md:flex md:flex-row grid grid-rows-2 grid-cols-2 gap-5 md:gap-20 font-medium text-white order-1 md:order-2'
+                    'md:flex md:flex-row grid grid-rows-2 grid-cols-2 gap-5 lg:gap-20 font-medium text-white order-1 lg:order-2'
                 }
             >
                 <div>

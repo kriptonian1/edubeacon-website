@@ -29,13 +29,13 @@ const Hero: React.FC<{ data: HeroProps }> = props => {
                 <div className={'flex flex-col justify-between gap-y-10 w-[90%] lg:w-[40%]'}>
                     <h1 className={'text-5xl md:text-5xl font-bold'}>{props.data.title}</h1>
                     <h2 className={'text-3xl md:text-2xl font-medium'}>{props.data.subtitle}</h2>
-                    <h4 className={'text-[#C8C8DC]'}>{props.data.offeredBy}</h4>
+                    <h4 className={'text-[#C8C8DC]'}>by {props.data.offeredBy}</h4>
                     <a
-                        href={
-                            props.data.title === 'Data Science'
-                                ? 'https://drive.google.com/file/d/1IVHuXz7u6S4pV5W3BrssVWIcEOGwCy9C/view?usp=sharing'
-                                : 'https://drive.google.com/file/d/1SXsag8BUSKiGOHnOIcGz_6E7YJv2r62b/view?usp=sharing'
-                        }
+                        // href={
+                        //     props.data.title === 'Data Science'
+                        //         ? 'https://drive.google.com/file/d/1IVHuXz7u6S4pV5W3BrssVWIcEOGwCy9C/view?usp=sharing'
+                        //         : 'https://drive.google.com/file/d/1SXsag8BUSKiGOHnOIcGz_6E7YJv2r62b/view?usp=sharing'
+                        // }
                         target="_blank"
                         rel="noopener noreferrer"
                     >
