@@ -76,6 +76,7 @@ const pmm:Course =
             image: InstructorImg,
             about: 'Rajesh Thakur is the Scientific Program Director of the Institute for Applied Computational Science(IACS) at the Harvard John A. Paulson School of Engineering and Applied Sciences. He has had a long and distinguished career as a scientist and data science educator, and currently teaches the CS109 course series for basic and advanced data science at Harvard University, as well as the capstone course for the IACS master’s program at Harvard.',
         },
+        testimonials: []
     }
 ;
 export default pmm;

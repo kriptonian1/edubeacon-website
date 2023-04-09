@@ -48,7 +48,7 @@ const FAQ = () => {
                         key={item.id}
                         className={`flex gap-x-6 ${
                             selected === item.id ? 'bg-[#057CF2]/[20%]' : 'bg-[#16171F]'
-                        } border-b-[2px] border-b-gray-600 p-10 text-left items-start`}
+                        } border-b-[2px] border-b-gray-600 p-7 text-left items-start`}
                     >
                         <div className={'text-[#3F8DC6]/[83%] font-bold text-2xl md:text-3xl'}>{item.id}</div>
                         <div className={`flex flex-col gap-y-4 flex-grow transition-all ease-out duration-300`}>

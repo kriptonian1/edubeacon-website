@@ -1,7 +1,7 @@
 import Page from '@/components/common/Page';
 import About, { AboutProps } from '@/components/courses/About';
 import Hero, { HeroProps } from '@/components/courses/Hero';
-import Instructor, { InstructorProps } from '@/components/courses/Instructor';
+import { InstructorProps } from '@/components/courses/Instructor';
 import Syllabus, { SyllabusProps } from '@/components/courses/Syllabus';
 import { Course } from '@/components/courses/assets/Hero';
 import React from 'react';
@@ -13,12 +13,14 @@ import dataScience from '../../../data/datascience';
 import aioops from '../../../data/aioops';
 import pmm from '../../../data/pmm';
 import dmfb from '../../../data/dmfb';
+import Testimonials, { TestimonialProps } from '@/components/courses/Testimonials';
 
 type Course = {
     hero: HeroProps;
     syllabus: SyllabusProps;
     instructor: InstructorProps;
     about: AboutProps;
+    testimonials: TestimonialProps;
 };
 
 const fetchCourseDetails = (slug: string | string[] | undefined): Course | null => {
@@ -49,7 +51,7 @@ const CourseDetail = () => {
     return (
         <Page>
             <Head>
-                <title>{course?.hero.title} | Edubeacon</title>
+                <title>{course?.hero.title} | EduBeacon</title>
             </Head>
             <Navbar />
             {course && (
@@ -58,6 +60,7 @@ const CourseDetail = () => {
                     <About data={course.about} />
                     <Syllabus data={course.syllabus} />
                     {/* <Instructor data={course.instructor} /> */}
+                    {course.testimonials.length !== 0 && <Testimonials data={course.testimonials} />}
                 </>
             )}
 

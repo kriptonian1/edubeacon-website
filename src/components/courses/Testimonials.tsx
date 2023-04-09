@@ -1,18 +1,22 @@
 import React from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { Star } from '@mui/icons-material';
 import 'swiper/css';
-import { testimonials } from '../../../data/testimonials';
 
-const Testimonials = () => {
+export type TestimonialProps = {
+    name: string;
+    rating: number;
+    position: string;
+    comments: string;
+    image: StaticImageData;
+} []
+
+const Testimonials: React.FC<{ data: TestimonialProps }> = props => {
     return (
-        <div className={'flex flex-col gap-y-16 items-center justify-center text-white z-10 pb-[200px] w-[80vw] mx-auto'}>
-            <div className={'flex flex-col gap-y-3 text-center'}>
-                <div className={'text-4xl font-medium'}>Graduate&apos;s Testimonials</div>
-                <div className={'text-lg text-[#B4B4B4]'}>Let’s see what our happy graduates say</div>
-            </div>
+        <div className={'w-full lg:w-[80vw] mx-auto flex flex-col gap-y-5 text-white z-10 px-5'}>
+            <h1 className={'text-3xl font-medium border-l-4 border-l-navyBlue pl-5'}>Testimonials</h1>
             <div className={'grid grid-cols-3 gap-4 grid-flow-row'}>
-                {testimonials.map((item, index) => (
+                {props.data.map((item, index) => (
                     <div key={index} className={'flex rounded-lg bg-white/[15%] text-left p-3'}>
                         <div className={'flex w-[110px]'}>
                             <div className={'min-w-[80px] h-[80px] bg-lightBlue rounded-full z-0 relative'} />

@@ -31,8 +31,8 @@ export default function Home() {
             <Skills />
             <WhyChoose />
             <Upskill />
+            <Testimonials />
             <FAQ />
-             <Testimonials />
 
             <div className="hidden flex-row-reverse md:flex sticky bottom-0 right-0 z-50">
                 <a
