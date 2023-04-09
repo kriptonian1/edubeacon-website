@@ -15,7 +15,7 @@ const Testimonials: React.FC<{ data: TestimonialProps }> = props => {
     return (
         <div className={'w-full lg:w-[80vw] mx-auto flex flex-col gap-y-5 text-white z-10 px-5'}>
             <h1 className={'text-3xl font-medium border-l-4 border-l-navyBlue pl-5'}>Testimonials</h1>
-            <div className={'grid grid-cols-3 gap-4 grid-flow-row'}>
+            <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 grid-flow-row'}>
                 {props.data.map((item, index) => (
                     <div key={index} className={'flex rounded-lg bg-white/[15%] text-left p-3'}>
                         <div className={'flex w-[110px]'}>

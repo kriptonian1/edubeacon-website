@@ -11,7 +11,7 @@ const Testimonials = () => {
                 <div className={'text-4xl font-medium'}>Graduate&apos;s Testimonials</div>
                 <div className={'text-lg text-[#B4B4B4]'}>Let’s see what our happy graduates say</div>
             </div>
-            <div className={'grid grid-cols-3 gap-4 grid-flow-row'}>
+            <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 grid-flow-row'}>
                 {testimonials.map((item, index) => (
                     <div key={index} className={'flex rounded-lg bg-white/[15%] text-left p-3'}>
                         <div className={'flex w-[110px]'}>
