@@ -81,13 +81,13 @@ const Hero: React.FC<{ data: HeroProps }> = props => {
                                 <div>{props.data.type.description}</div>
                             </div>
                         </div>
-                        <div className={'flex gap-x-3'}>
+                        {/* <div className={'flex gap-x-3'}>
                             <Duration />
                             <div className={'flex flex-col gap-y-3'}>
                                 <div>{props.data.cost.amount}</div>
                                 <div>{props.data.cost.description}</div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className={'w-[20px] bg-white h-full]'} />
@@ -109,13 +109,13 @@ const Hero: React.FC<{ data: HeroProps }> = props => {
                             <div>{props.data.type.description}</div>
                         </div>
                     </div>
-                    <div className={'flex gap-x-3'}>
+                    {/* <div className={'flex gap-x-3'}>
                         <Duration />
                         <div className={'flex flex-col gap-y-3'}>
                             <div>{props.data.cost.amount}</div>
                             <div>{props.data.cost.description}</div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 {/* <Course /> */}
                 {/*<Image src={Course} alt={''} />*/}

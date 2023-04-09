@@ -15,7 +15,7 @@ const dmfb:Course =
             },
             type: {
                 title: 'Online live virtual classroom',
-                description: '1-hour sessions, 4 days a week',
+                description: 'Online live virtual classroom \n Live Mentorship',
             },
             cost: {
                 amount: 'Get in touch with us',

@@ -6,9 +6,7 @@ const ContactDetails = () => {
         <div className="flex flex-col gap-y-10  z-10 text-white">
             <div className="flex items-center">
                 <AddressIcon />
-                <span className="ml-7">
-                    Indranagar, Bengaluru
-                </span>
+                <span className="ml-7">Indiranagar, Bengaluru</span>
             </div>
             <div className="flex items-center">
                 <PhoneIcon />
@@ -18,8 +16,8 @@ const ContactDetails = () => {
             </div>
             <div className="flex items-center">
                 <MailIcon />
-                <a href="mailto:mail@edubeacon.com">
-                    <span className="ml-7">mail@edubeacon.com</span>
+                <a href="mailto:info@edubeacon.io">
+                    <span className="ml-7">info@edubeacon.io</span>
                 </a>
             </div>
         </div>

@@ -29,50 +29,38 @@ const socials = [
 
 const companyLinks = [
     {
-        name: 'About',
-        link: '#',
-    },
-    {
         name: 'Careers',
-        link: '#',
+        link: '/career',
     },
     {
         name: 'Team',
-        link: '#',
+        link: '/team',
     },
 ];
 
-const resourceLinks = [
-    {
-        name: 'Safety',
-        link: '#',
-    },
-    {
-        name: 'Support',
-        link: '#',
-    },
-    {
-        name: 'Branding',
-        link: '#',
-    },
-];
+// const resourceLinks = [
+//     {
+//         name: 'Safety',
+//         link: '#',
+//     },
+//     {
+//         name: 'Support',
+//         link: '#',
+//     },
+//     {
+//         name: 'Branding',
+//         link: '#',
+//     },
+// ];
 
 const policyLinks = [
     {
         name: 'Terms & Conditions',
-        link: '#',
-    },
-    {
-        name: 'Acknowledgement',
-        link: '#',
+        link: 'terms_and_conditions',
     },
     {
         name: 'Privacy',
-        link: 'privacy-policy',
-    },
-    {
-        name: 'License',
-        link: '#',
+        link: 'privacy_policy',
     },
 ];
 
@@ -102,19 +90,19 @@ const Footer = () => {
                 <div>
                     <div className={'mb-5 text-navyBlue text-xl'}>Company</div>
                     {companyLinks.map((c, index) => (
-                        <a href={c.link} key={index} className={'block text-sm mb-3'}>
+                        <Link href={c.link} key={index} className={'block text-sm mb-3'}>
                             {c.name}
-                        </a>
+                        </Link>
                     ))}
                 </div>
-                <div>
+                {/* <div>
                     <div className={'mb-5 text-navyBlue text-xl'}>Resources</div>
                     {resourceLinks.map((c, index) => (
                         <a href={c.link} key={index} className={'block text-sm mb-3'}>
                             {c.name}
                         </a>
                     ))}
-                </div>
+                </div> */}
                 <div>
                     <div className={'mb-5 text-navyBlue text-xl'}>Policy</div>
                     {policyLinks.map((c, index) => (

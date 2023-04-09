@@ -5,6 +5,7 @@ import Footer from '@/components/footer/Footer';
 import Navbar from '@/components/navbar/Navbar';
 import React from 'react';
 import Head from 'next/head';
+import { WhatsappIcon, WhatsappMobileIcon } from '@/components/assets';
 
 const Contact = () => {
     return (
@@ -24,7 +25,24 @@ const Contact = () => {
                 <ContactDetails />
                 <ContactBox />
             </div>
-
+            <div className="hidden flex-row-reverse md:flex sticky bottom-0 right-0 z-50">
+                <a
+                    href="https://api.whatsapp.com/send/?phone=919945488674&text=Hey%20there%20%F0%9F%91%8B"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <WhatsappIcon />
+                </a>
+            </div>
+            <div className="flex flex-row-reverse md:hidden sticky bottom-3  z-50">
+                <a
+                    href="https://api.whatsapp.com/send/?phone=919945488674&text=Hey%20there%20%F0%9F%91%8B"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <WhatsappMobileIcon />
+                </a>
+            </div>
             <div className="sticky top-[100vh]">
                 <Footer />
             </div>

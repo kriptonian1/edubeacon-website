@@ -14,7 +14,7 @@ const aioops:Course =
             },
             type: {
                 title: '1on1 Live Mentorship sessions',
-                description: 'Study your way, Study from anywhere, at any time',
+                description: 'Online live virtual classroom \n Live Mentorship',
             },
             cost: {
                 amount: 'Free',

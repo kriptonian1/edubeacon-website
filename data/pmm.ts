@@ -14,7 +14,7 @@ const pmm:Course =
             },
             type: {
                 title: 'Online Course',
-                description: 'Study at your own pace, from anywhere in the world.',
+                description: 'Online live virtual classroom \n Live Mentorship',
             },
             cost: {
                 amount: 'Get in touch with us',
