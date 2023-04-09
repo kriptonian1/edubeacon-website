@@ -15,7 +15,7 @@ const links = [
         path: '/courses',
     },
     {
-        name: 'Why EduBeacon',
+        name: 'Why Us',
         path: '/why-edubeacon',
     },
     {

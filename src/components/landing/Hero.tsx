@@ -48,7 +48,7 @@ const Hero = () => {
                     with <span className={'text-lightBlue'}>EduBeacon</span>
                 </span>
                 <div className={'font-medium text-lg'}>
-                    Learn practical skills to transform your career, anytime and anywhere with EduBeacon.
+                    Learn practical skills to transform your career <br/> Anytime and anywhere with EduBeacon.
                 </div>
                 <div className={'flex md:flex-row flex-col gap-5 mt-5 items-center'}>
                     <Link href={'/courses'}>

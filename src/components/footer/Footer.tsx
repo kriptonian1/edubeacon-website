@@ -7,23 +7,23 @@ import Link from 'next/link';
 const socials = [
     {
         icon: <FacebookIcon />,
-        link: '#',
+        link: 'https://www.facebook.com/profile.php?id=100080125302956&mibextid=ZbWKwL',
     },
     {
         icon: <InstagramIcon />,
-        link: '#',
+        link: 'https://www.instagram.com/edubeacon_/',
     },
-    {
-        icon: <TwitterIcon />,
-        link: '#',
-    },
-    {
-        icon: <YoutubeLogo />,
-        link: '#',
-    },
+    // {
+    //     icon: <TwitterIcon />,
+    //     link: '#',
+    // },
+    // {
+    //     icon: <YoutubeLogo />,
+    //     link: '#',
+    // },
     {
         icon: <LinkedinLogo />,
-        link: '#',
+        link: 'https://www.linkedin.com/company/edubeacon/',
     },
 ];
 
@@ -76,6 +76,11 @@ const policyLinks = [
     },
 ];
 
+const setYear = () => {
+    const year = new Date().getFullYear();
+    return year;
+}
+
 const Footer = () => {
     return (
         <div className={'bg-[#252525] p-20 flex flex-col md:flex-row items-center justify-between z-10'}>
@@ -124,7 +129,7 @@ const Footer = () => {
                     <BlueButton>Browse Courses</BlueButton>
                 </Link>
                 <WhiteButton>Contact Us</WhiteButton>
-                <div className={'text-white font-medium'}>© EduBeacon, 2022.</div>
+                <div className={'text-white font-medium'}>© EduBeacon, {setYear()}.</div>
             </div>
         </div>
     );
