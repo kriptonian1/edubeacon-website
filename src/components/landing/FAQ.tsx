@@ -2,6 +2,7 @@ import React from 'react';
 import { KeyboardArrowDown } from '@mui/icons-material';
 import BlueButton from '@/components/common/BlueButton';
 import Link from 'next/link';
+import { Disclosure, Transition } from '@headlessui/react';
 
 const data = [
     {
@@ -43,31 +44,35 @@ const FAQ = () => {
             <div className={'font-bold text-3xl text-center'}>FAQs</div>
             <div className={'flex flex-col w-[85vw] md:w-[75vw] lg:w-[60vw] z-10 relative'}>
                 {data.map(item => (
-                    <button
-                        onClick={handleSelected.bind(null, item.id)}
-                        key={item.id}
-                        className={`flex gap-x-6 ${
-                            selected === item.id ? 'bg-[#057CF2]/[20%]' : 'bg-[#16171F]'
-                        } border-b-[2px] border-b-gray-600 p-7 text-left items-start`}
-                    >
-                        <div className={'text-[#3F8DC6]/[83%] font-bold text-2xl md:text-3xl'}>{item.id}</div>
-                        <div className={`flex flex-col gap-y-4 flex-grow transition-all ease-out duration-300`}>
-                            <div className={'font-semibold text-xl md:text-2xl'}>{item.question}</div>
-                            <div
-                                className={`${selected !== item.id && 'collapse'} transition-all ease-out duration-300`}
-                                id="collapseExample"
-                            >
-                                {item.answer}
-                            </div>
-                        </div>
-                        <div
-                            className={`${
-                                selected === item.id && 'rotate-180 relative'
-                            } translation-all ease-out duration-300`}
-                        >
-                            <KeyboardArrowDown />
-                        </div>
-                    </button>
+                    <Disclosure key={item.id}>
+                        {({open}) => (
+                            <>
+                                <Disclosure.Button className={`flex gap-x-5 ${open ? 'bg-[#057CF2]/[20%]' : 'bg-[#16171F] border-b-[1px] border-b-gray-600'} p-7 `} >
+                                    <div className={'text-[#3F8DC6]/[83%] font-bold text-2xl md:text-3xl'}>{item.id}</div>
+                                    <div className={'font-semibold text-xl md:text-2xl flex-grow text-left'}>{item.question}</div>
+                                    <div
+                                        className={`${
+                                            open && 'rotate-180 relative'
+                                        } translation-all ease-out duration-300`}
+                                    >
+                                        <KeyboardArrowDown />
+                                    </div>
+                                </Disclosure.Button>
+                                <Transition
+                                    enter="transition duration-100 ease-out"
+                                    enterFrom="transform scale-95 opacity-0"
+                                    enterTo="transform scale-100 opacity-100"
+                                    leave="transition duration-75 ease-out"
+                                    leaveFrom="transform scale-100 opacity-100"
+                                    leaveTo="transform scale-95 opacity-0"
+                                >
+                                    <Disclosure.Panel className={`bg-[#057CF2]/[20%] px-7 pb-3 pl-[5rem] border-b-[1px] border-b-gray-600`}>
+                                        {item.answer}
+                                    </Disclosure.Panel>
+                                </Transition>
+                            </>
+                        )}
+                    </Disclosure>
                 ))}
             </div>
             <Link href={'/faq'} className={'z-10'}>
