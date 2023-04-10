@@ -25,20 +25,24 @@ const Career = () => {
                 <h2 className=" text-xl max-w-2xl text-white text-justify p-6">
                     Welcome to the career page for our EdTech firm! We are a group of dedicated people who believe in
                     the transforming potential of education. Our purpose is to give students of all ages the skills and
-                    resources they need to reach their greatest potential. <br /><br />
+                    resources they need to reach their greatest potential. <br />
+                    <br />
                     As a member of our team, you will be able towork on cutting-edge technology and creative solutions
-                    that will make a difference in the world. You'll be part of a collaborative workplace that supports
-                    development and learning whether you're a software developer, customer service professional,
-                    marketing, or part of our business team.
-                    <br /><br />
+                    that will make a difference in the world. You&apos;ll be part of a collaborative workplace that
+                    supports development and learning whether you&apos;re a software developer, customer service
+                    professional, marketing, or part of our business team.
+                    <br />
+                    <br />
                     We believe in investing in the growth of our workers, which is why we provide on-going training and
                     professional development opportunities. We also provide fair pay, complete benefits, and a flexible
                     work schedule that encourages a good work-life balance.
-                    <br /><br />
+                    <br />
+                    <br />
                     Our EdTech firm is dedicated to making a positive difference in the lives of students all around the
-                    world. If you're seeking for a rewarding and challenging career, we invite you to check through our
-                    job listings and apply immediately. We look forward to hearing from you and assisting you in
-                    achieving your professional objectives.
+                    world. If you&apos;re seeking for a rewarding and challenging career, we invite you to check through
+                    our world. If you&apos;re seeking for a rewarding and challenging career, we invite you to check
+                    through our job listings and apply immediately. We look forward to hearing from you and assisting
+                    you in achieving your professional objectives.
                 </h2>
 
                 <Link href={'/'} className="justify-center">
