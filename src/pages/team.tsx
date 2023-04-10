@@ -35,7 +35,7 @@ const ComingSoon = () => {
                     <br />
                     Our staff is dedicated to providing our clients with outstanding goods and services, and we are
                     continually trying to enhance and evolve our offerings. We are committed to offering the finest
-                    available solutions for our clients' educational needs, with an emphasis on customer happiness and
+                    available solutions for our clients&#39; educational needs, with an emphasis on customer happiness and
                     user experience.
                     <br />
                     <br />

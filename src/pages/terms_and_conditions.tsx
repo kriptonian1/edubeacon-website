@@ -71,7 +71,7 @@ const Terms_and_conditions = () => {
                     <div className="font-semibold">Disclaimer of Warranties</div>
                     <br />
                     <br />
-                    We provide our website and products and services "as is" and "as available" without any warranty or
+                    We provide our website and products and services &quot;as is&quot; and &quot;as available&quot; without any warranty or
                     representation of any kind, whether express, implied, or statutory. We do not warrant that our
                     website or products and services will be uninterrupted, error-free, or free from viruses or other
                     harmful components. We disclaim any and all warranties, express or implied, including but not
@@ -93,7 +93,7 @@ const Terms_and_conditions = () => {
                     <br />
                     <br /> You agree to indemnify, defend, and hold harmless us and our affiliates, officers, directors,
                     employees, agents, and licensors from and against any and all claims, liabilities, damages, losses,
-                    costs, expenses, or fees (including reasonable attorneys' fees) arising out of or in connection with
+                    costs, expenses, or fees (including reasonable attorneys&#39; fees) arising out of or in connection with
                     your use of our website or products and services, your breach of these Terms and Conditions, or your
                     violation of any law or the rights of a third-party.
                     <br />
