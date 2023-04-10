@@ -25,10 +25,10 @@ const Terms_and_conditions = () => {
                 <h2 className=" text-xl max-w-2xl text-white text-justify p-6">
                     <br />
                     <br />
-                    <div className="font-semibold">EduBeacon's Privacy Statement</div>
+                    <div className="font-semibold">EduBeacon&#39;s Privacy Statement</div>
                     <br />
                     <br />
-                    EduBeacon values the privacy and security of our customers' personal information. This Privacy
+                    EduBeacon values the privacy and security of our customers&#39; personal information. This Privacy
                     Policy describes how we collect, utilize, and disclose personal information in the course of
                     providing our products and services.
                     <br />
