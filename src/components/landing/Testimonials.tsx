@@ -16,7 +16,7 @@ const Testimonials = () => {
                 <div className={'text-lg text-[#B4B4B4]'}>Let’s see what our happy graduates say</div>
             </div>
 
-            <div className={'md:flex gap-4 w-[90%] hidden  flex-wrap items-center justify-center'}>
+            <div className={'md:flex gap-4 w-[87%] hidden  flex-wrap items-center justify-center'}>
                 <Swiper
                     className="mySwiper"
                     spaceBetween={100}
