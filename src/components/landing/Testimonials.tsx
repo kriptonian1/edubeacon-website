@@ -58,7 +58,7 @@ const Testimonials = () => {
             </div>
 
             {/* Mobile */}
-            <div className={'flex gap-4 w-[90%] md:hidden flex-wrap text-justify items-center justify-center'}>
+            <div className={'flex gap-4 w-[70%] md:hidden flex-wrap text-justify items-center justify-center'}>
                 <Swiper
                     className="mySwiper"
                     spaceBetween={100}
