@@ -14,6 +14,8 @@ import aioops from '../../../data/aioops';
 import pmm from '../../../data/pmm';
 import dmfb from '../../../data/dmfb';
 import Testimonials, { TestimonialProps } from '@/components/courses/Testimonials';
+import ContactBox from '@/components/contact/ContactBox';
+import CourseReachOut from '@/components/common/CourseReachOut';
 
 type Course = {
     hero: HeroProps;
@@ -63,6 +65,15 @@ const CourseDetail = () => {
                     {course.testimonials.length !== 0 && <Testimonials data={course.testimonials} />}
                 </>
             )}
+
+            <div></div>
+
+            <div className='justify-center items-start md:mx-[38%] m-[4vw]'>
+                <div className='text-white text-3xl mb-6'>
+                    Reach out to us for any queries
+                </div>
+                <CourseReachOut />
+            </div>
 
             <Footer />
         </Page>
