@@ -16,7 +16,7 @@ const Testimonials = () => {
                 <div className={'text-lg text-[#B4B4B4]'}>Let’s see what our happy graduates say</div>
             </div>
 
-            <div className={'md:flex gap-4 w-[90%] hidden  flex-wrap text-justify items-center justify-center'}>
+            <div className={'md:flex gap-4 w-[90%] hidden  flex-wrap items-center justify-center'}>
                 <Swiper
                     className="mySwiper"
                     spaceBetween={100}
@@ -34,7 +34,7 @@ const Testimonials = () => {
                             {/* <div>
                                 hey
                             </div> */}
-                            <div className={'flex rounded-lg bg-white/[15%]  text-left p-3 h-[14rem]'}>
+                            <div className={'flex rounded-lg bg-white/[15%]  text-left p-3 h-[18rem] min-w-[10rem]'}>
                                 <div className={'flex flex-col gap-y-3 flex-grow'}>
                                     <div className={'text-xl font-medium'}>{item.name}</div>
                                     <div className={'text-sm text-[#B4B4B4]'}>{item.position}</div>
@@ -49,7 +49,7 @@ const Testimonials = () => {
                                         ))}
                                     </div>
 
-                                    <div className="text-justify">{item.comments}</div>
+                                    <div className="">{item.comments}</div>
                                 </div>
                             </div>
                         </SwiperSlide>

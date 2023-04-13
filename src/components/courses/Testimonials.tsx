@@ -52,7 +52,7 @@ const Testimonials: React.FC<{ data: TestimonialProps }> = props => {
                                 {/* <div>
                                 hey
                             </div> */}
-                                <div className={'flex rounded-lg bg-white/[15%]  text-left p-3'}>
+                                <div className={'flex rounded-lg bg-white/[15%]  text-left p-3 h-[18rem] min-w-[10rem]'}>
                                     {/* <div className={'flex w-[110px]'}>
                             <div className={'min-w-[80px] h-[80px] bg-lightBlue rounded-full z-0 relative'} />
                             <Image
